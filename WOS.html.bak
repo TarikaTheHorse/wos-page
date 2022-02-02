@@ -46,7 +46,7 @@
 		</p>
 		<p>
 			<a href="https://tarikathehorse.github.io/my-stable/" style="text-decoration: none; padding: 0px; margin: auto;" title="My Webpage">
-					<button type="button" id="my-stable" style="box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.5); border: 3px ridge #ce0f25; font-family: 'Georgia'; font-size: 14px; padding: 3px 3px 3px 3px; background-color: #fdfef8; color: #000;">My Webpage</button>
+					<button type="button" id="my-webpage" style="box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.5); border: 3px ridge #ce0f25; font-family: 'inherit'; font-size: 14px; padding: 3px 3px 3px 3px; background-color: #fdfef8; color: #000;">My Webpage</button>
 			</a>
 		</p>
 		</div>
