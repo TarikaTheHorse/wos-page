@@ -37,12 +37,17 @@
 			<h2 style="font-size: 24px;" id="about-me">About Me</h2>
 			<blockquote style="text-align: justify; margin: auto; text-indent: 50px; font-size: 16px;" contenteditable="false" spellcheck="true">Hello! I am the Duchess of Canterbury, and I am the manager of the Royal Stables of Amicran. I recently started playing WOS again after a hiatus of <b>6 years!</b> This means I have to start from scratch again, but every end leads to new beginnings, right? I am hoping to specialize in <ins>Lippizaners and Arabians</ins>, and I am working on acquiring breeding facilities soon. In the meanwhile, I show the horses in a variety of disciplines. <mark style="background-color: #f6e078;">My inbox is always open, so feel free to message me about anything!</mark></blockquote>
 		</p>
-		<p>
+		<p id="about-RSA">
 			<h2 style="font-size: 24px;">Stable Shows</h2>
 			<a href="visit_stables.php?sid=398222" style="text-decoration: none; padding: 0px; margin: auto;" title="Royal Stables of Amicran">
 					<button type="button" id="my-stable" style="box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.5); border: 3px ridge #ce0f25; font-family: 'Georgia'; font-size: 14px; padding: 3px 3px 3px 3px; background-color: #fdfef8; color: #000;">My Stable</button>
 			</a>
 			<blockquote style="text-align: justify; margin: auto; text-indent: 50px; padding: 0px; padding-bottom: 10px; font-size: 16px;" contenteditable="false" spellcheck="true">I do stable shows occasionally and upon request! Currently I am only able to host halter shows, but as I grow I will expand my facilities! However, I do not have the means to promise a large winning purse.</blockquote>
+		</p>
+		<p>
+			<a href="https://tarikathehorse.github.io/my-stable/" style="text-decoration: none; padding: 0px; margin: auto;" title="My Webpage">
+					<button type="button" id="my-stable" style="box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.5); border: 3px ridge #ce0f25; font-family: 'Georgia'; font-size: 14px; padding: 3px 3px 3px 3px; background-color: #fdfef8; color: #000;">My Webpage</button>
+			</a>
 		</p>
 		</div>
 	</div>
