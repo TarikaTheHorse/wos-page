@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" style="padding: 0;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* RESET */
+    * {
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 0;
+        border-radius: 1.5em;
+        font-family: Tahoma;
+    }
+    /* COLORS and FONTS */
+    body {
+        color: black;
+        text-align: left;
+        font-size: 24px;
+        line-height: 1.25;
+        padding: 0;
+        background-color: tan;
+    }
+    header,
+    .lipizzaner,
+    main,
+    .updates,
+    .about,
+    .stables,
+    footer {
+        background: floralwhite;
+        box-shadow: -7px 7px 20px #282828;
+    }
+    .container {
+        display: grid;
+        max-width: 820;
+        gap: 15px;
+        padding: 0;
+    }
+    .lipizzaner {
+        max-width: 100%;
+        padding: 0;
+        justify-self: center;
+    }
+    .player-name {
+        font-size: px;
+        color: #ed2939;
+        text-decoration: none;
+    }
+    h2 {
+        text-decoration: underline #ed2939;
+    }
+    h4 {
+        color: #ed2939;
+        padding-top: 10;
+        padding-bottom: 0;
+    }
+    @media all and (min-width: 768px) {
+        .container {
+            grid-template-areas: 
+            ". picture"
+            "header picture"
+            "horses updates"
+            "horses about"
+            "horses stables"
+            "footer footer";
+            grid-template-columns: 45vw;
+        }
+        .lipizzaner {
+            grid-area: picture;
+        }
+        header {
+            grid-area: header;
+        }
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+        main {
+            grid-area: horses;
+        }
+        .updates {
+            grid-area: updates;
+        }
+        .about {
+            grid-area: about;
+        }
+        .stables {
+            grid-area: stables;
+        }
+    }
+    span {
+        background-color: lightcoral;
+        padding: 0;
+        border-radius: 0;
+    }
+    a {
+        padding: 0;
+    }
+    p {
+        padding-top: 0;
+    }
+    ins {
+        padding: 0;
+    }
+</style>
+<body>
+    <div class="container">
+            <header>
+                <h2 class="player-name">Duchess of Canterbury's Fillers</h2>
+                <h3 class="subtitle">My second account!</h3>
+            </header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Lipizzan_Stallions%2C_proud_horse_and_rider_2.jpg" alt="Lipizzaner stallion" class="lipizzaner">
+            <main class="horses">
+                <h2>The Horses</h2>
+                <p>On this account, I take in, buy, and rescue horses of every breed and circuit level and use them as fillers!</p>
+                <p>Not every horse is currently being used as a filler, and that is so I can rank them up until they can be a filler in the circuit I want them to be in!</p>
+                <h4>Status of Account</h4>
+                <p>I only have a few horses at the moment, but I am hoping to acquire/breed more in the future!</p>
+                <h4>New Horses</h4>
+                <p>I am more than happy to <ins>buy</ins> any horses off you that you cannot/do not want to take care of anymore! I try to rescue horses, but this can be difficult, so healthy yet unwanted horses are very much welcome!</p>
+            </main>
+            <aside class="updates">
+                <h2>Updates</h2>
+                <h4>2.12.21</h4>
+                <p>Updated layout to something inspired by Red Kestrel Equestrian (#260910). Thank you for the inspiration!</p>
+            </aside>
+            <aside class="about">
+                <h2>About</h2>
+                <p>This account will host filler horses that allow shows to run. I'm plan to use them to run stable shows quicker and to help out in the daily shows. Other than that, not much else happens on this account! <span>My inbox is always open!</span></p>
+            </aside>
+            <aside class="stables">
+                <h2>Stables</h2>
+                <p>I have a blue-ribbon stable over on my other account, Duchess of Canterbury, #xxxxxx. On that account, I offer caretaking, breeding, and training services, as well as stable shows! Be sure to check it out! :happy:</p>
+            </aside>
+        <footer class="main-page">
+            <h2>Main page</h2>
+            <p>Make sure to visit me on my main account, <a href="" target="_blank" style="color: #ed2939;">Duchess of Canterbury</a>!</p>
+        </footer>
+    </div>
+</body>
+</html>
