@@ -40,15 +40,31 @@
         gap: 15px;
         padding: 0;
     }
+    header {
+        display: grid;
+        grid-template: 3 1 / 1 3;
+    }
     .lipizzaner {
         max-width: 100%;
         padding: 0;
         justify-self: center;
     }
+    .coat-of-arms {
+        max-width: 100%;
+        grid-row: 1 / 3;
+        grid-column: 1 / 2;
+        align-self: center;
+    }
     .player-name {
         font-size: px;
         color: #ed2939;
         text-decoration: none;
+        grid: 1 / 2 / 2 / 3;
+    }
+    h3 {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        padding: 0 0 0 10px;
     }
     h2 {
         text-decoration: underline #ed2939;
@@ -110,12 +126,13 @@
 <body>
     <div class="container">
             <header>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Coat_of_Arms_of_the_Duke_of_Norfolk%2C_the_Earl_Marshal.svg/1024px-Coat_of_Arms_of_the_Duke_of_Norfolk%2C_the_Earl_Marshal.svg.png?20130719181153" alt="Coat of Arms of the Duchess" class="coat-of-arms">
                 <h2 class="player-name">Duchess of Canterbury's Fillers</h2>
                 <h3 class="subtitle">My second account!</h3>
             </header>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Lipizzan_Stallions%2C_proud_horse_and_rider_2.jpg" alt="Lipizzaner stallion" class="lipizzaner">
+            <img src="https://i.imgur.com/Rz8dqdP.jpg" class="lipizzaner">
             <main class="horses">
-                <h2>The Horses</h2>
+                <h2>Horses</h2>
                 <p>On this account, I take in, buy, and rescue horses of every breed and circuit level and use them as fillers!</p>
                 <p>Not every horse is currently being used as a filler, and that is so I can rank them up until they can be a filler in the circuit I want them to be in!</p>
                 <h4>Status of Account</h4>
@@ -126,7 +143,7 @@
             <aside class="updates">
                 <h2>Updates</h2>
                 <h4>2.12.21</h4>
-                <p>Updated layout to something inspired by Red Kestrel Equestrian (#260910). Thank you for the inspiration!</p>
+                <p>Updated layout to something inspired by Red Kestrel Equestrian (#260910). Thank you for the inspiration! It was a fun challenge to try and recreate!</p>
             </aside>
             <aside class="about">
                 <h2>About</h2>
