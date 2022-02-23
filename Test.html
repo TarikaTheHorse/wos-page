@@ -6,20 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            border-image-source: url(https://tarikathehorse.github.io/wos-page/images/frame1.svg);
-            border-image-slice: 10% 70% 10%;
+        * {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        button {
+            border-image-source: url('images/frame1.svg');
+            border-image-slice: 18% 17% 18% 17%;
             border-image-width: 3em;
+            border-style: solid;
+            border-width: 3em;
+            background-color: wheat;
+            border-color: transparent;
+            transition-duration: 0.2s;
+        }
+        button:hover {
+            background-color: aquamarine;
+        }
+        button:active {
+            background-color: chartreuse;
+            color: slateblue;
         }
     </style>
 </head>
-<body style="margin: 2em;">
-    <div style="float: left; margin: 1em; width: 5%;">
-        <img width="100%" srcset="https://upload.wikimedia.org/wikipedia/commons/c/c3/Cameo_tailpiece%2C_Velhagen_%26_Klasings_Monatshefte%2C_1911%E2%80%931912%2C_01.svg">
-    </div>
-    <div style="float: none; text-align: justify;">
-        <h2>Hello world!</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum pariatur eveniet nam. Blanditiis repudiandae molestiae, in cupiditate alias asperiores magnam ipsa deserunt sunt. Eum eos in est hic iure iusto voluptas culpa molestias reiciendis excepturi. Minima quae saepe eos eligendi natus id, molestiae sequi quas. Libero ab fugiat quo consectetur beatae, similique quod atque ad id odio, at vel totam minima quidem, nesciunt sapiente laudantium expedita? Quo deleniti doloribus dicta ratione pariatur perspiciatis tempore tenetur, ipsam atque voluptatum necessitatibus, perferendis unde! Esse dignissimos ipsam blanditiis, fugit, ab ipsa voluptates aliquam culpa quibusdam corrupti soluta? Sunt nobis quis eveniet quibusdam expedita provident aliquid natus incidunt architecto voluptate mollitia, pariatur eius sit cum, magnam veritatis esse atque aliquam voluptates rem sequi cumque id minus? Dicta accusantium distinctio eaque nihil, quibusdam iste asperiores soluta est quam dolorem laborum in sed expedita quasi similique tempora ab necessitatibus impedit dolores? Cumque ea, esse ab praesentium doloribus quod dolor quos aut numquam libero quisquam, nulla eos sed. Veniam inventore ratione, cum quibusdam suscipit repudiandae ab ullam animi blanditiis excepturi adipisci labore voluptate libero! Pariatur aspernatur ut, nobis voluptas non enim veritatis, saepe omnis eos asperiores ipsa expedita illo! Quibusdam officia corporis iste asperiores. Explicabo, provident asperiores.</p>
-    </div>
+<body style="margin: 2em; width: auto;">
+    <button>
+        <h1 style="text-align: center; vertical-align: middle;">Button!</h1>
+    </button>
 </body>
 </html>
