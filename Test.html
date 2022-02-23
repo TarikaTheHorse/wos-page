@@ -11,13 +11,13 @@
         }
         button {
             border-image-source: url('images/frame1.svg');
-            border-image-slice: 18% 17% 18% 17%;
+            border-image-slice: 18% 17% fill;
             border-image-width: 3em;
             border-style: solid;
             border-width: 3em;
-            background-color: wheat;
-            border-color: transparent;
+            background-color: transparent;
             transition-duration: 0.2s;
+            background-image: url("images/ornament-2.png");
         }
         button:hover {
             background-color: aquamarine;
@@ -26,11 +26,15 @@
             background-color: chartreuse;
             color: slateblue;
         }
+        #element {
+            fill: aqua;
+        }
     </style>
 </head>
 <body style="margin: 2em; width: auto;">
     <button>
         <h1 style="text-align: center; vertical-align: middle;">Button!</h1>
     </button>
+    <img id="element" src="images/frame1.svg" alt="">
 </body>
 </html>
