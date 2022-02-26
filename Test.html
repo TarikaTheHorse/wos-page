@@ -9,27 +9,17 @@
     <script src="test.js"></script>
 </head>
 <body style="margin: 1em; width: auto;">
-    <!-- Tab links -->
-<div class="tab">
-    <button class="tablinks" id="l">London</button>
-    <button class="tablinks" id="p">Paris</button>
-    <button class="tablinks" id="t">Tokyo</button>
-  </div>
-  
-  <!-- Tab content -->
-  <div id="London" class="tabcontent">
-    <h3>London</h3>
-    <p>London is the capital city of England.</p>
-  </div>
-  
-  <div id="Paris" class="tabcontent">
-    <h3>Paris</h3>
-    <p>Paris is the capital of France.</p>
-  </div>
-  
-  <div id="Tokyo" class="tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
-  </div>
+    <a href="#orange" data-tab="orange" class="b-nav-tab active">Orange</a>
+    <a href="#green" data-tab="green" class="b-nav-tab">Green</a>
+    <a href="#blue" data-tab="blue" class="b-nav-tab">Blue</a>
+    <div id="orange" class="b-tab active">
+        Orange tab content
+    </div>
+    <div id="green" class="b-tab">
+        Green tab content
+    </div>
+    <div id="blue" class="b-tab">
+        Blue tab content
+    </div>
 </body>
 </html>

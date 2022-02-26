@@ -1,24 +1,18 @@
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+.b-tab {
+    padding: 20px;
+    border: 1px solid #000;
+    display: none;
   }
   
-  /* Style the buttons that are used to open the tab content */
-  .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
+  .b-tab.active {
+    display: block;
   }
   
-  /* Style the tab content */
-  .tabcontent {
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+  .b-nav-tab {
+    display: inline-block;
+    padding: 20px;
+  }
+  
+  .b-nav-tab.active {
+    color: #ff4200;
   }
