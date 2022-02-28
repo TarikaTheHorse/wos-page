@@ -288,11 +288,12 @@
 			</div>
 		</div>
 		<!-- Breeding Info / Lines -->
-		<div style="grid-area: 2 / 1 / 3 / 2; display: flex; flex-direction: row;" id="breedings">
+		<div style="grid-area: 2 / 1 / 3 / 2; display: flex; flex-direction: row;">
 			<div style="background: rgba(253, 254, 248, 0.7); border-radius: 0.5em; border: 2px solid #1353b4; padding: 1em; width: 100%;">
 				<div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
-					<button data-id="tab1" style="filter: drop-shadow(0.25em 0.25em 0.25em rgba(0,0,0,0.5)); font: 1.25em Georgia; padding: 0.4em; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25em solid #f3d53f; border-radius: 0.5em; text-decoration: none; margin: 0.25em 0.5em;">Breeding Info</button>
-					<button data-id="tab2" style="filter: drop-shadow(0.25em 0.25em 0.25em rgba(0,0,0,0.5)); font: 1.25em Georgia; padding: 0.4em; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25em solid #f3d53f; border-radius: 0.5em; text-decoration: none; margin: 0.25em 0.5em;">Lines</button>
+					<button data-id="tab1" id="breedings" style="filter: drop-shadow(0.25em 0.25em 0.25em rgba(0,0,0,0.5)); font: 1.25em Georgia; padding: 0.4em; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25em solid #f3d53f; border-radius: 0.5em; text-decoration: none; margin: 0.25em 0.5em;">Breeding Info</button>
+					<button data-id="tab2" id="pedigrees" style="filter: drop-shadow(0.25em 0.25em 0.25em rgba(0,0,0,0.5)); font: 1.25em Georgia; padding: 0.4em; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25em solid #f3d53f; border-radius: 0.5em; text-decoration: none; margin: 0.25em 0.5em;">Lines</button>
+					<button data-id="tab3" id="updates" style="filter: drop-shadow(0.25em 0.25em 0.25em rgba(0,0,0,0.5)); font: 1.25em Georgia; padding: 0.4em; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25em solid #f3d53f; border-radius: 0.5em; text-decoration: none; margin: 0.25em 0.5em;">Updates</button>
 				</div>
 				<div>
 					<div id="tab1" class="tab">
@@ -313,7 +314,7 @@
 						<p style="font-size: 1em;"><b>I reserve the right to withold breedings for any reason!</b>
 						<br><mark style="background-color: #f6e078;">Please message me before breeding!</mark></p>
 					</div>
-					<div id="tab2" class="tab" style="display: none; margin: 1em; max-height: 80vh; overflow-y: scroll;">
+					<div id="tab2" class="tab" style="display: none; margin: 1em; max-height: 80vh; overflow-y: auto;">
 						<table style="background-color: #f3d53f; text-align: center; margin: auto;" cellspacing="1.75" cellpadding="4">
 							<tr><th colspan="4" style="background-color: #fdfef8;">
 								<img height="auto" width="15%" src="https://tarikathehorse.github.io/wos-page/images/ornament-10.svg" alt="" style="vertical-align: middle; transform: rotateY(180deg);">
@@ -362,7 +363,7 @@
 							<tr style="background-color: #fdfef8;">
 								<td style="font-family: Georgia;">-</td>
 								<td rowspan="2" style="font-family: Georgia;">Created</td>
-								<td rowspan="4" style="font-family: Georgia;"><b>&#9822;</b><u>RSA Frederick</u><br><em>born r? | now r13</em></td>
+								<td rowspan="4" style="font-family: Georgia;"><b>&#9822;</b><u>RSA Frederick</u><br><em>born r0 | now r13</em></td>
 								<td rowspan="8" style="font-family: Georgia;">-</td>
 							</tr>
 							<tr style="background-color: #fdfef8;">
@@ -423,6 +424,15 @@
 								<td style="font-family: Georgia;">-</td>
 							</tr>
 						</table>
+					</div>
+					<div id="tab3" class="tab" style="display: none; max-height: 80vh; overflow-y: auto">
+						<h2 style="font-size: 1.5em; margin: 1em;">Updates</h2>
+						<h4>March 1<sup>st</sup>, 2022</h4>
+						<p style="text-align: justify; margin: auto; text-indent: 3.125em; font-size: 1em; margin-bottom: 1em;">I am happy to share that RSA Marie has given birth to a foal, RSA Frederick II!</p>
+						<img src="images/ornament-11.svg" alt="" style="width: 25%;">
+						<h4>February 14<sup>th</sup>, 2022</h4>
+						<p style="text-align: justify; margin: auto; text-indent: 3.125em; font-size: 1em; margin-bottom: 1em;">The Royal Stables of Amicran and the Duchess of Canterbury are proud to announce the newest members of the royal herd: RSA Anne, RSA Albert, RSA Helena, RSA Henry, RSA Otto, RSA Peter, and RSA Victoria! I am excited to see them learn and grow! They will make an excellent founding herd for the new line of royal Lipizzaners!</p>
+						<img src="images/ornament-11.svg" alt="" style="width: 25%;">
 					</div>
 				</div>
 				<script>
@@ -751,25 +761,7 @@
 	</div>
 </div>
 <script>
-/*Treat Store*/
-	function bhTreats() {
-		document.getElementById("treats").style.backgroundColor = "#1353b4";
-		document.getElementById("treats").style.color = "#fff";
-		document.getElementById("treats").style.border = "0.25em double #f3d53f";
-		document.getElementById("treats").style.transitionDuration = "0.4s";
-	}
-	
-	function boTreats() {
-		document.getElementById("treats").style.backgroundColor = "#fdfef8";
-		document.getElementById("treats").style.color = "#000";
-		document.getElementById("treats").style.border = "0.25em solid #f3d53f";
-		document.getElementById("treats").style.transitionDuration = "0.4s";
-	}
-	
-	document.getElementById("treats").onmouseover = function() {bhTreats()};
-	document.getElementById("treats").onmouseout = function() {boTreats()};
-	
-/*My Stable Button*/
+/*My Stable*/
 	function bhMyStable() {
 		document.getElementById("my-stable").style.backgroundColor = "#1353b4";
 		document.getElementById("my-stable").style.color = "#fff";
@@ -822,7 +814,79 @@
 	
 	document.getElementById("filler-account").onmouseover = function() {bhFillerAccount()};
 	document.getElementById("filler-account").onmouseout = function() {boFillerAccount()};
+
+/*Breedings*/
+	function bhBreedings() {
+		document.getElementById("breedings").style.backgroundColor = "#1353b4";
+		document.getElementById("breedings").style.color = "#fff";
+		document.getElementById("breedings").style.border = "0.25em double #f3d53f";
+		document.getElementById("breedings").style.transitionDuration = "0.4s";
+	}
 	
+	function boBreedings() {
+		document.getElementById("breedings").style.backgroundColor = "#fdfef8";
+		document.getElementById("breedings").style.color = "#000";
+		document.getElementById("breedings").style.border = "0.25em solid #f3d53f";
+		document.getElementById("breedings").style.transitionDuration = "0.4s";
+	}
+	
+	document.getElementById("breedings").onmouseover = function() {bhBreedings()};
+	document.getElementById("breedings").onmouseout = function() {boBreedings()};
+
+/*Pedigrees*/
+	function bhPedigrees() {
+		document.getElementById("pedigrees").style.backgroundColor = "#1353b4";
+		document.getElementById("pedigrees").style.color = "#fff";
+		document.getElementById("pedigrees").style.border = "0.25em double #f3d53f";
+		document.getElementById("pedigrees").style.transitionDuration = "0.4s";
+	}
+	
+	function boPedigrees() {
+		document.getElementById("pedigrees").style.backgroundColor = "#fdfef8";
+		document.getElementById("pedigrees").style.color = "#000";
+		document.getElementById("pedigrees").style.border = "0.25em solid #f3d53f";
+		document.getElementById("pedigrees").style.transitionDuration = "0.4s";
+	}
+	
+	document.getElementById("pedigrees").onmouseover = function() {bhPedigrees()};
+	document.getElementById("pedigrees").onmouseout = function() {boPedigrees()};
+
+/*Updates*/
+	function bhUpdates() {
+		document.getElementById("updates").style.backgroundColor = "#1353b4";
+		document.getElementById("updates").style.color = "#fff";
+		document.getElementById("updates").style.border = "0.25em double #f3d53f";
+		document.getElementById("updates").style.transitionDuration = "0.4s";
+	}
+	
+	function boUpdates() {
+		document.getElementById("updates").style.backgroundColor = "#fdfef8";
+		document.getElementById("updates").style.color = "#000";
+		document.getElementById("updates").style.border = "0.25em solid #f3d53f";
+		document.getElementById("updates").style.transitionDuration = "0.4s";
+	}
+	
+	document.getElementById("updates").onmouseover = function() {bhUpdates()};
+	document.getElementById("updates").onmouseout = function() {boUpdates()};
+
+/*Treat Store*/
+	function bhTreats() {
+		document.getElementById("treats").style.backgroundColor = "#1353b4";
+		document.getElementById("treats").style.color = "#fff";
+		document.getElementById("treats").style.border = "0.25em double #f3d53f";
+		document.getElementById("treats").style.transitionDuration = "0.4s";
+	}
+	
+	function boTreats() {
+		document.getElementById("treats").style.backgroundColor = "#fdfef8";
+		document.getElementById("treats").style.color = "#000";
+		document.getElementById("treats").style.border = "0.25em solid #f3d53f";
+		document.getElementById("treats").style.transitionDuration = "0.4s";
+	}
+	
+	document.getElementById("treats").onmouseover = function() {bhTreats()};
+	document.getElementById("treats").onmouseout = function() {boTreats()};
+
 /*Clubs*/
 	function bhClubs() {
 		document.getElementById("clubs").style.backgroundColor = "#1353b4";
