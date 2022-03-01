@@ -4,22 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <style>
+        html 
+        {
+        overflow: auto;
+        }
+    </style>
 </head>
-<body style="background: rgba(253, 254, 248, 0.7); padding: 1em; text-align: center;">
-    <button data-id="tab1">tab 1</button>
-    <button data-id="tab2">tab 2</button>
-    <button data-id="tab3">tab 3</button>
-    <div id="tab1" class="tab" style="display: block; margin: 1em;">Tab 1</div>
-    <div id="tab2" class="tab" style="display: none; margin: 1em;">Tab 2</div>
-    <div id="tab3" class="tab" style="display: none; margin: 1em;">Tab 3</div>
-    <script>
-        document.addEventListener('click', ({ target: { dataset: { id = '' }}}) => {
-            if (id.length > 0) {
-                document.querySelectorAll('.tab').forEach(t => t.style.display = 'none');
-				document.querySelector(`#${id}`).style.display = 'block';
-            }
-        });
-    </script>
+<body style="overflow: hidden;">
+    <div style="min-width: 85vw; margin: 0px; padding: 0px; height: 350vh; border: none;">
+        <iframe src="https://tarikathehorse.github.io/wos-page/WOS.html" frameborder="0" frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%" scrolling="auto" style="margin: 0px; padding: 0px; height: 100%; border: none;"></iframe>
+    </div>
 </body>
 </html>
