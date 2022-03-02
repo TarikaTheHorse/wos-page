@@ -3,3 +3,6 @@ html, body {
     margin: 0;
     background: url('https://i.imgur.com/bSMXvf1.jpg') repeat;
 }
+#coa {
+    max-width: 30%;
+}
