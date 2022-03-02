@@ -6,3 +6,12 @@ html, body {
 #coa {
     max-width: 30%;
 }
+details {
+    width: 30%;
+    margin: auto; 
+    padding: 0.4rem; 
+    background: #FFF; 
+    border: 2px solid #f6e078; 
+    border-radius: 0.5rem; 
+    cursor: pointer;
+}
