@@ -114,6 +114,11 @@ button {
     background-color: #fdfef8;
     cursor: pointer;
     font: inherit;
+    transition-duration: 0.4s;
+}
+button:hover {
+    background-color: #1353b4;
+    border-style: double;
 }
 ::-webkit-scrollbar {
     width: 0.5rem;
