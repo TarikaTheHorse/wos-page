@@ -30,7 +30,8 @@ main {
     grid-area: main;
     display: flex;
     flex-direction: column;
-    max-height: calc(60vh);
+    max-height: 60vh;
+    overflow-y: auto;
     align-items: center;
     justify-content: space-between;
     height: 100%;
@@ -113,4 +114,16 @@ button {
     background-color: #fdfef8;
     cursor: pointer;
     font: inherit;
+}
+::-webkit-scrollbar {
+    width: 0.5rem;
+    
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: #0f3c80;
+}
+::-webkit-scrollbar-track {
+    border-radius: 1rem;
+    background-color: #f6e078;
 }
