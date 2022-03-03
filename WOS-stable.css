@@ -114,7 +114,7 @@ button:hover {
     body {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
         "board main main breed"
         "board main main breed"
