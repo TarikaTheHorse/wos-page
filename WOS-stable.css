@@ -5,13 +5,10 @@
 html, body {
     padding: 0;
     margin: 0;
-    background: url('https://i.imgur.com/bSMXvf1.jpg') repeat;
     box-sizing: border-box;
 }
 html {
-    padding: 1rem;
     width: 100%;
-    height: 100%;
 }
 body {
     width: 100%;
