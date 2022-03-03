@@ -14,27 +14,18 @@ html {
     height: 100%;
 }
 body {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-      "board main main breed"
-      "board main main breed"
-      "care care inst inst";
-    gap: 1rem;
     width: 100%;
     height: 100%;
     font-family: Fondamento;
-}
-main {
-    grid-area: main;
     display: flex;
     flex-direction: column;
-    max-height: 60vh;
-    overflow-y: auto;
+    gap: 3rem;
+}
+main {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
 }
 aside {
     border-radius: 0.5rem; 
@@ -82,18 +73,6 @@ details {
     border-radius: 0.5rem; 
     cursor: pointer;
 }
-.instructor {
-    grid-area: inst;
-}
-.breeding {
-    grid-area: breed;
-}
-.caretaking {
-    grid-area: care;
-}
-.boarding {
-    grid-area: board;
-}
 p {
     margin: 0;
     margin-top: 1rem;
@@ -131,4 +110,33 @@ button:hover {
 ::-webkit-scrollbar-track {
     border-radius: 1rem;
     background-color: #f6e078;
+}
+@media screen and (min-width:900px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "board main main breed"
+        "board main main breed"
+        "care care inst inst";
+        gap: 1rem;
+    }
+    main {
+        grid-area: main;
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+    .instructor {
+        grid-area: inst;
+    }
+    .breeding {
+        grid-area: breed;
+    }
+    .caretaking {
+        grid-area: care;
+    }
+    .boarding {
+        grid-area: board;
+    }
 }
