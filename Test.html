@@ -4,23 +4,220 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        html 
-        {
-        overflow: auto;
-        }
-        
-        html, body, div, iframe 
-        {
-        margin: 0px; padding: 0px; height: 100%; border: none;
-        }
-
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body style="overflow: hidden;">
-    <div style="min-width: 85vw; margin: 0px; padding: 0px; height: 100%; border: none;">
-        <p style="font-family:papyrus;">The quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. 1234567890!@#$%^&*()-=[]\;',./_+{}|:"<>?`~</p>
-    </div>
+<body>
+    <form name="tabButtons" style="display: grid; place-items: center; width: 100%; font-family: 'Georgia';">
+        <input type="radio" name="tabb" checked style="grid-area: 1 / 1 / 2 / 2; appearance: none; width: 100%; background-color: #1353b4; border: 0.25rem solid #f3d53f; border-radius: 0.5rem 0.5rem 0 0; height: 3rem; filter: drop-shadow(0.25rem -0.25rem 0.1rem rgba(0,0,0,0.5)); transition-duration: 100ms; box-sizing: border-box;">
+            <label style="grid-area: 1 / 1 / 2 / 2; font-size: 1.25rem; z-index: 0; color: white;">Breedings</label>
+        <input type="radio" name="tabb" style="grid-area: 1 / 2 / 2 / 3; appearance: none; width: 100%; background-color: #1353b4; border: 0.25rem solid #f3d53f; border-radius: 0.5rem 0.5rem 0 0; height: 3rem; filter: drop-shadow(0.25rem -0.25rem 0.1rem rgba(0,0,0,0.5)); transition-duration: 100ms; box-sizing: border-box;">
+            <label style="grid-area: 1 / 2 / 2 / 3; font-size: 1.25rem; z-index: 0; color: white;">Lines</label>
+        <input type="radio" name="tabb" style="grid-area: 1 / 3 / 2 / 4; appearance: none; width: 100%; background-color: #1353b4; border: 0.25rem solid #f3d53f; border-radius: 0.5rem 0.5rem 0 0; height: 3rem; filter: drop-shadow(0.25rem -0.25rem 0.1rem rgba(0,0,0,0.5)); transition-duration: 100ms; box-sizing: border-box;">
+            <label style="grid-area: 1 / 3 / 2 / 4; font-size: 1.25rem; z-index: 0; color: white;">Updates</label>
+        <main style="grid-area: 2 / 1 / 3 / 4; text-align: center; padding: 1rem; width: 100%; height: 100%; border: 0.25rem solid #f3d53f; border-top: 0; background-color: #fdfef8; border-radius: 0 0 0.5rem 0.5rem; box-sizing: border-box;">
+            <article style="display: none; max-height: 80vh; overflow-y: auto;">
+                <img src="https://tarikathehorse.github.io/wos-page/images/horse&stableboy.svg" alt="" style="width: 25%; float: left;">
+                <img src="https://tarikathehorse.github.io/wos-page/images/horse&stableboy.svg" alt="" style="width: 25%; float: right; transform: rotateY(180deg);">
+                <h2 style="font-size: 1.5rem; margin: 1rem;">Breedings</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Filet_rhombe.svg" alt="" style="width: 45%;">
+                <p style="text-align: justify; text-indent: 3.125em; font-size: 1em;">I offer breeding services and I am willing to breed some of my horses! However, I have a few rules governing the horses I am willing to breed with my own. These rules really only apply to <ins>Lipizzaners and Arabians</ins>, and I am much more lax with other breeds as I do not plan to create lines with them. Although, no matter what breed your horse is, <em>please message me before breeding!</em></p>
+                <hr>
+                <p style="text-align: justify; font-size: 1rem;"><b>Your horse must be...</b>
+                    <ul style="text-align: justify; font-size: 1rem; list-style-type: '&#9822;';">
+                        <li style="padding-left: 0.5rem; margin: 0.25rem 1rem;"><ins>at least <b>22</b> <abbr title="years old">y/o</abbr>!</ins></li>
+                        <li style="padding-left: 0.5rem; margin: 0.25rem 1rem;">within ~100 points of my horse</li>
+                        <li style="padding-left: 0.5rem; margin: 0.25rem 1rem;">the same breed as my horse</li>
+                        <li style="padding-left: 0.5rem; margin: 0.25rem 1rem;"><abbr title="Show Champion">SC</abbr> of at least <b>3</b> shows</li>
+                        <li style="padding-left: 0.5rem; margin: 0.25rem 1rem;">of the same circuit level (C, B, A, etc.)</li>
+                        <li style="padding-left: 0.5rem; margin: 0.25rem 1rem;">of good health and up to date on all vet and farrier procedures</li>
+                    </ul>
+                </p>
+                <hr>
+                <p style="font-size: 1rem;"><b>I reserve the right to withold breedings for any reason!</b>
+                <br><mark style="background-color: #f6e078;">Please message me before breeding!</mark></p>
+            </article>
+            <article style="display: none; max-height: 80vh; overflow-y: auto;">
+                <table style="background-color: #f3d53f; text-align: center; margin: auto; table-layout: fixed; width: 100%;" cellspacing="1.75" cellpadding="4">
+                    <tr><th colspan="4" style="background-color: #fdfef8;">
+                        <img height="auto" width="15%" src="https://tarikathehorse.github.io/wos-page/images/ornament-10.svg" alt="" style="vertical-align: middle; transform: rotateY(180deg);">
+                        <h4 style="font-size: 1.5rem; font-family: Georgia; margin: 0; vertical-align: middle;">Royal Pedigree Records</h4>
+                        <img height="auto" width="15%" src="https://tarikathehorse.github.io/wos-page/images/ornament-10.svg" alt="" style="vertical-align: middle;">
+                    </th></tr>
+                    <tr style="font-size: 1rem;"><th colspan="4" style="background-color: #fdfef8;">&#9794; = &#9822; &#9792; = &#9816;</th></tr>
+                    <tr style="background-color: #fdfef8; font-size: 1rem;">
+                        <th style="font-family: Georgia;">Great-Grandparents</th>
+                        <th style="font-family: Georgia;">Grandparents</th>
+                        <th style="font-family: Georgia;">Sire / Dam</th>
+                        <th style="font-family: Georgia;">Colt / Filly</th>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;">Created</td>
+                        <td rowspan="2" style="font-family: Georgia;"><b>&#9822;</b><a href="http://whiteoakstables.net/english/horse_stats.php?hid=563716" style="font-size: 1rem; font-family: Georgia; text-decoration: underline;" target="_blank">RSA Frederick</a><br><em>born r0</em></td>
+                        <td rowspan="4" style="font-family: Georgia;"><b>&#9822;</b><a href="http://whiteoakstables.net/english/horse_stats.php?hid=564069" style="font-size: 1rem; font-family: Georgia; text-decoration: underline;" target="_blank">RSA Henry</a><br><em>born r8</em></td>
+                        <td rowspan="8" style="font-family: Georgia;">-</td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;">Created</td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;">Created</td>
+                        <td rowspan="2" style="font-family: Georgia;"><b>&#9816;</b><a href="http://whiteoakstables.net/english/horse_stats.php?hid=561057" style="font-size: 1rem; font-family: Georgia; text-decoration: underline;" target="_blank">RSA Alexandra</a><br><em>born r? | retired r22</em></td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;">Created</td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;">Created</td>
+                        <td rowspan="2" style="font-family: Georgia;"><b>&#9822;</b><a href="http://whiteoakstables.net/english/horse_stats.php?hid=563716" style="font-size: 1rem; font-family: Georgia; text-decoration: underline;" target="_blank">RSA Frederick</a><br><em>born r0</em></td>
+                        <td rowspan="4" style="font-family: Georgia;"><b>&#9816;</b></td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;">Created</td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;">Deceased</td>
+                        <td rowspan="2" style="font-family: Georgia;"><b>&#9816;</b><a href="http://whiteoakstables.net/english/horse_stats.php?hid=560958" style="font-size: 1rem; font-family: Georgia; text-decoration: underline;" target="_blank">WolfStar Marie</a><br><em>born r? | retired r64</em></td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;">Deceased</td>
+                    </tr>
+                    <!-- New Pedigree -->
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;">Created</td>
+                        <td rowspan="2" style="font-family: Georgia;"><b>&#9822;</b><a href="http://whiteoakstables.net/english/horse_stats.php?hid=563716" style="font-size: 1rem; font-family: Georgia; text-decoration: underline;" target="_blank">RSA Frederick</a><br><em>born r0</em></td>
+                        <td rowspan="4" style="font-family: Georgia;"><b>&#9822;</b><a href="http://whiteoakstables.net/english/horse_stats.php?hid=564331" style="font-size: 1rem; font-family: Georgia; text-decoration: underline;" target="_blank">RSA Frederick II</a><br><em>born r27</em></td>
+                        <td rowspan="8" style="font-family: Georgia;">-</td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;">Created</td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;">Deceased</td>
+                        <td rowspan="2" style="font-family: Georgia;"><b>&#9816;</b><a href="http://whiteoakstables.net/english/horse_stats.php?hid=560958" style="font-size: 1rem; font-family: Georgia; text-decoration: underline;" target="_blank">WolfStar Marie</a><br><em>born r? | retired r64</em></td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;">Deceased</td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;">Created</td>
+                        <td rowspan="2" style="font-family: Georgia;"><b>&#9822;</b><a href="http://whiteoakstables.net/english/horse_stats.php?hid=563716" style="font-size: 1rem; font-family: Georgia; text-decoration: underline;" target="_blank">RSA Frederick</a><br><em>born r0</em></td>
+                        <td rowspan="4" style="font-family: Georgia;"><b>&#9816;</b><a href="http://whiteoakstables.net/english/horse_stats.php?hid=564386" style="font-size: 1rem; font-family: Georgia; text-decoration: underline;" target="_blank">RSA Isabella</a><br><em>born r28</em></td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;">Created</td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;">Deceased</td>
+                        <td rowspan="2" style="font-family: Georgia;"><b>&#9816;</b><a href="http://whiteoakstables.net/english/horse_stats.php?hid=560958" style="font-size: 1rem; font-family: Georgia; text-decoration: underline;" target="_blank">WolfStar Marie</a><br><em>born r? | retired r64</em></td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;">Deceased</td>
+                    </tr>
+                    <!-- New Pedigree -->
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;"><b>&#9822;</b><a href="http://whiteoakstables.net/english/horse_stats.php?hid=564139" style="font-size: 1rem; font-family: Georgia; text-decoration: underline;" target="_blank">RSA Albert</a><br><em>born r14</em></td>
+                        <td rowspan="2" style="font-family: Georgia;">-</td>
+                        <td rowspan="4" style="font-family: Georgia;">-</td>
+                        <td rowspan="8" style="font-family: Georgia;">-</td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;"><b>&#9816;</b><a href="http://whiteoakstables.net/english/horse_stats.php?hid=564175" style="font-size: 1rem; font-family: Georgia; text-decoration: underline;" target="_blank">RSA Victoria</a><br><em>born r0</em></td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;"><b>&#9822;</b><a href="http://whiteoakstables.net/english/horse_stats.php?hid=564069" style="font-size: 1rem; font-family: Georgia; text-decoration: underline;" target="_blank">RSA Henry</a><br><em>born r8</em></td>
+                        <td rowspan="2" style="font-family: Georgia;">-</td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;"><b>&#9816;</b><a href="http://whiteoakstables.net/english/horse_stats.php?hid=564312" style="font-size: 1rem; font-family: Georgia; text-decoration: underline;" target="_blank">RSA Helena</a><br><em>born r0</em></td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;"><b>&#9822;</b><a href="http://whiteoakstables.net/english/horse_stats.php?hid=564140" style="font-size: 1rem; font-family: Georgia; text-decoration: underline;" target="_blank">RSA Otto</a><br><em>born r19</em></td>
+                        <td rowspan="2" style="font-family: Georgia;">-</td>
+                        <td rowspan="4" style="font-family: Georgia;">-</td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;"><b>&#9816;</b><a href="http://whiteoakstables.net/english/horse_stats.php?hid=564176" style="font-size: 1rem; font-family: Georgia; text-decoration: underline;" target="_blank">RSA Anne</a><br><em>born r0</em></td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;"><b>&#9822;</b><a href="http://whiteoakstables.net/english/horse_stats.php?hid=564137" style="font-size: 1rem; font-family: Georgia; text-decoration: underline;" target="_blank">RSA Peter</a><br><em>born r10</em></td>
+                        <td rowspan="2" style="font-family: Georgia;">-</td>
+                    </tr>
+                    <tr style="background-color: #fdfef8;">
+                        <td style="font-family: Georgia;"><b>&#9816;</b></td>
+                    </tr>
+                </table>
+            </article>
+            <article style="display: none; max-height: 80vh; overflow-y: auto;">
+                <header>
+                    <img src="https://tarikathehorse.github.io/wos-page/images/trumpeting-rider.svg" alt="" style="width: 25%; float: left; transform: rotateY(180deg);">
+                    <img src="https://tarikathehorse.github.io/wos-page/images/trumpeting-rider.svg" alt="" style="width: 25%; float: right;">
+                    <h2 style="font-size: 1.5rem; margin: 1rem;">Updates</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Filet_rhombe.svg" alt="" style="width: 45%;">
+                </header>
+                <div>
+                    <h4>March 3<sup>rd</sup>, 2022</h4>
+                    <p style="text-align: justify; text-indent: 3.125rem; font-size: 1rem;">RSA welcomes our newest foal from RSA Frederick x WolfStar Marie, RSA Isabella!</p>
+                    <img src="https://tarikathehorse.github.io/wos-page/images/ornament-11.svg" alt="" style="width: 25%;">
+                </div>
+                <div>
+                    <h4>March 1<sup>st</sup>, 2022</h4>
+                    <p style="text-align: justify; text-indent: 3.125rem; font-size: 1rem;">I am happy to share that WolfStar Marie has given birth to a foal, RSA Frederick II!</p>
+                    <img src="https://tarikathehorse.github.io/wos-page/images/ornament-11.svg" alt="" style="width: 25%;">
+                </div>
+                <div>
+                    <h4>February 14<sup>th</sup>, 2022</h4>
+                    <p style="text-align: justify; text-indent: 3.125rem; font-size: 1rem;">The Royal Stables of Amicran and the Duchess of Canterbury are proud to announce the newest members of the royal herd: RSA Anne, RSA Albert, RSA Helena, RSA Henry, RSA Otto, RSA Peter, and RSA Victoria! I am excited to see them learn and grow! They will make an excellent founding herd for the new line of royal Lipizzaners!</p>
+                    <img src="https://tarikathehorse.github.io/wos-page/images/ornament-11.svg" alt="" style="width: 25%;">
+                </div>
+                <div>
+                    <h4>January 23<sup>rd</sup>, 2022</h4>
+                    <p style="text-align: justify; text-indent: 3.125rem; font-size: 1rem;">I have made this account a blue ribbon stable! I mainly did this so I could level up my horses faster, but it has some other nice perks, like caretaking. Grooming is starting to become tedious. ;)</p>
+                    <img src="https://tarikathehorse.github.io/wos-page/images/ornament-11.svg" alt="" style="width: 25%;">
+                </div>
+                <div>
+                    <h4>December 29<sup>th</sup>, 2021</h4>
+                    <p style="text-align: justify; text-indent: 3.125rem; font-size: 1rem;">Holy cow! It's been a while! I had totally forgotten about this account ever since I made it in 2016, the summer after 5<sup>th</sup> grade! Revisiting this account is like a blast to the past. I might start being active here again, but who knows...</p>
+                    <img src="https://tarikathehorse.github.io/wos-page/images/ornament-11.svg" alt="" style="width: 25%;">
+                </div>
+            </article>
+        </main>
+    </form>
+    <script>
+        $('[name=tabb]').each(function(i,d){
+            var p = $(this).prop('checked');
+        //   console.log(p);
+            if(p){
+                $('main > #bigTabContent').eq(i)
+                    .css({display: "block"});
+                $('form > #bigTabLabel').eq(i).css({color: "black"});
+                $('form > #bigTabInput').eq(i).css({
+                    borderBottom: "none",
+                    borderRadius: "0.5rem 0.5rem 0 0",
+                    backgroundColor: "#fdfef8"});
+            }    
+        });
+        $('[name=tabb]').on('change', function(){
+            var p = $(this).prop('checked');
+            
+            // $(type).index(this) == nth-of-type
+            var i = $('[name=tabb]').index(this);
+            
+            $('main > #bigTabContent').css({display: "none"});
+            $('main > #bigTabContent').eq(i).css({display: "block"});
+            $('form > #bigTabLabel').css({color: "white"});
+            $('form > #bigTabLabel').eq(i).css({color: "black"});
+            $('form > #bigTabInput').css({
+                borderBottom: "0.25rem solid #f3d53f",
+                borderRadius: "0.5rem 0.5rem 0 0",
+                backgroundColor: "#1353b4",
+            });
+            $('form > #bigTabInput').eq(i).css({
+                borderBottom: "none",
+                borderRadius: "0.5rem 0.5rem 0 0",
+                backgroundColor: "#fdfef8",
+            });
+        });
+    </script>
 </body>
 </html>
 <!-- Andale Mono; Arial; Arial Black; Book Antiqua; Comic Sans MS; Courier New; Georgia; Helvetica; Impact; Symbol; Tahoma; Terminal; Times New Roman; Trebuchet MS; Verdana; Webdings; Wingdings -->
