@@ -8,19 +8,16 @@
 </head>
 <body>
     <main>
-        <h1 class="content1">Content 1</h1>
-            <button>Click Me!</button>
-        <h1 class="content2">Content 2</h1>
-        <h1 class="content3">Content 3</h1>
+        <h1 class="bar">Content 1</h1>
+            <button class="bar">Click Me!</button>
+        <h1 class="bar">Content 2</h1>
+        <h1 class="bar">Content 3</h1>
     </main>
     <script>
-        (function() {
-            let myStuff = document.querySelectorAll('button').matches(':hover');
-            for (let i = 0; i < myHeaders.length; i++) {
-                myStuff[i].style.color = 'red';
-                
-            }
-        })();
+        let myStuff = document.querySelectorAll('h1');
+        for (let i = 0; i < myStuff.length; i++) {
+            myStuff[i].style.color = 'red';   
+        }
     </script>
 </body>
 </html>
