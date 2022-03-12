@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 </head>
 <body>
     <main>
-        <h1 class="bar">Content 1</h1>
-            <button class="bar">Click Me!</button>
-        <h1 class="bar">Content 2</h1>
-        <h1 class="bar">Content 3</h1>
+        <button id="button" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); font: 1rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25rem solid #f3d53f; border-radius: 0.5rem;">Click Me!</button>
+        <button id="button" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); font: 1rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25rem solid #f3d53f; border-radius: 0.5rem;">Click Me!</button>
     </main>
     <script>
-        let myStuff = document.querySelectorAll('h1');
-        for (let i = 0; i < myStuff.length; i++) {
-            myStuff[i].style.color = 'red';   
-        }
+        $("button")
+            .bind( "mouseenter", function() {
+                $(this).css({
+                    backgroundColor: "#1353b4", 
+                    color: "#fff", 
+                    border: "0.25rem double #f3d53f", 
+                    transitionDuration: "0.4s",
+                });
+            })
+            .bind( "mouseleave", function() {
+                $(this).css({
+                    backgroundColor: "#fdfef8", 
+                    color: "#000", 
+                    border: "0.25rem solid #f3d53f", 
+                    transitionDuration: "0.4s",
+                });
+            })
     </script>
 </body>
 </html>
