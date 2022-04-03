@@ -6,30 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 </head>
-<body>
-    <main>
-        <button id="button" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); font: 1rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25rem solid #f3d53f; border-radius: 0.5rem;">Click Me!</button>
-        <button id="button" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); font: 1rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25rem solid #f3d53f; border-radius: 0.5rem;">Click Me!</button>
-    </main>
-    <script>
-        $("button")
-            .bind( "mouseenter", function() {
-                $(this).css({
-                    backgroundColor: "#1353b4", 
-                    color: "#fff", 
-                    border: "0.25rem double #f3d53f", 
-                    transitionDuration: "0.4s",
-                });
-            })
-            .bind( "mouseleave", function() {
-                $(this).css({
-                    backgroundColor: "#fdfef8", 
-                    color: "#000", 
-                    border: "0.25rem solid #f3d53f", 
-                    transitionDuration: "0.4s",
-                });
-            })
-    </script>
+<body style="font-size: 16px; background: url(http://www.whiteoakstables.net/english/images/bluebg.gif) repeat;">
+    <div style="display: flex; align-items: center; justify-content: center; background: url('https://i.imgur.com/bSMXvf1.jpg') repeat; width: 55vw; box-shadow: 3rem 3rem 3rem #dedfff inset, -3rem -3rem 3rem #dedfff inset; border-radius: 3rem / 3em;">
+        <div style="font-family: Georgia; line-height: 2.5rem; font-size: 1rem; vertical-align: middle; text-align: justify; width: 100%; height: 100%; margin: 7rem; padding: 2.5rem; border: 0.25rem solid #f3d53f; border-radius: 0.5rem; background-color: rgba(253, 254, 248, 0.65);">
+            <div>
+                Hello <span>Shang</span>,
+            </div>
+            <div style="text-indent: 2rem;">
+                I would like to invoice you for <span style="border: 0.2rem solid #dc143c; text-shadow: 1.5px 1.5px 1px goldenrod; font-weight: bold; font-kerning: normal;">$1500</span> for my services as caretaker for three of your horses. You can find the cost breakdown in the table below.
+            </div>
+            <table style="text-align: center; margin: auto; width: 100%; border: 1px solid black; border-collapse: separate;" cellspacing="2.5" cellpadding="20">
+                <tr>
+                    <th colspan="4" style="border: 1px solid black; font: bold 1rem Georgia;">Invoice for member <a target="_blank" href="/english/visit_home.php?mid=430320" style="font: bold 1rem Georgia;">#430320</a></th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; font: bold 1rem Georgia;">Service</td>
+                    <td style="border: 1px solid black; font: bold 1rem Georgia;">Quantity</td>
+                    <td colspan="2" style="border: 1px solid black; font: bold 1rem Georgia;">Cost</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; font: 1rem Georgia;">Vet</td>
+                    <td style="border: 1px solid black; font: 1rem Georgia;">9</td>
+                    <td rowspan="2" style="border: 1px solid black; font: 1rem Georgia;">x $100</td>
+                    <td style="border: 1px solid black; font: 1rem Georgia;">$900</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; font: 1rem Georgia;">Farrier</td>
+                    <td style="border: 1px solid black; font: 1rem Georgia;">6</td>
+                    <td style="border: 1px solid black; font: 1rem Georgia;">$600</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; font: 1rem Georgia;">Feed</td>
+                    <td style="border: 1px solid black; font: 1rem Georgia;">3</td>
+                    <td rowspan="2" style="border: 1px solid black; font: 1rem Georgia;">x $0</td>
+                    <td style="border: 1px solid black; font:1rem Georgia;">$0</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; font: 1rem Georgia;">Groom</td>
+                    <td style="border: 1px solid black; font: 1rem Georgia;">33 </td>
+                    <td style="border: 1px solid black; font: 1rem Georgia;">$0</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right; border: 1px solid black; padding-right: 1rem; font: bold 1rem Georgia;" colspan="3">Total Cost</td>
+                    <td style="text-decoration: underline; border: 1px solid black; font: bold 1rem Georgia;">$1500</td>
+                </tr>
+            </table>
+            If I have not received the agreed upon amount as defined by my rules on my <a target="_blank" href="/english/visit_stables.php?sid=398222" style="font: 1rem Georgia;">stable page</a> by <b>Tuesday, April 5th, 2022</b>, I will remove them from my care. Thank you for your patronage and have a great day!
+            <div style="text-indent: 2rem;">
+                Sincerely,<br><span style="font: 2rem 'Brush Script MT';">Duchess of Canterbury</span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 <!-- Andale Mono; Arial; Arial Black; Book Antiqua; Comic Sans MS; Courier New; Georgia; Helvetica; Impact; Symbol; Tahoma; Terminal; Times New Roman; Trebuchet MS; Verdana; Webdings; Wingdings -->

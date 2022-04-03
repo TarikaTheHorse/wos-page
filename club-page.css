@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "orlando-caps";
+  src: url("Orlando Caps CG.otf");
+}
+
+* {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  margin: 0;
+}
+
+img {
+  width: 50vw;
+}
+
+a {
+  font-weight: bold;
+}
+
+abbr {
+  cursor: pointer;
+  -webkit-text-decoration-color: red;
+          text-decoration-color: red;
+  font-weight: bold;
+}
+
+h2, h3 {
+  font-family: 'orlando-caps';
+  color: #a75f24;
+  border-top: 2px solid #a75f24;
+  border-bottom: 2px solid #a75f24;
+  width: auto;
+}
+
+.main {
+  height: 100%;
+  margin: auto;
+  max-width: 50vw;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  row-gap: 10vh;
+}
+
+.about p, .spotlight p, .shows-about p, .show-prizes p, .club-awards p, .events p {
+  text-indent: 2rem;
+}
+
+header {
+  color: #df9f6b;
+  font-family: 'orlando-caps', sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 1.25rem;
+  text-indent: 1rem;
+  line-height: 3.5rem;
+}
+
+header h1, header hr {
+  padding: 0;
+  margin: 0;
+}
+
+header hr {
+  background-color: #df9f6b;
+  height: 3px;
+  border: none;
+}
+
+.leaders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  text-align: center;
+}
+
+.presidents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.presidents span {
+  padding: 0.4rem;
+}
+
+.presidents span:after, .presidents span:before {
+  content: '\00A0\272A\00A0';
+}
+
+.alert {
+  font: italic bold 1.25rem 'orlando-caps';
+  color: #b30000;
+}
+
+.alert:before, .alert:after {
+  content: '***';
+}
+
+.outdated {
+  text-decoration: line-through;
+}
+
+.show-schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.show-date-slot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.show-date-slot .show-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.show-date-slot .show-info p {
+  margin: 0;
+  width: auto;
+}
+
+.prize-list ul {
+  list-style: '\27A4\00A0';
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+}
+/*# sourceMappingURL=club-page.css.map */
