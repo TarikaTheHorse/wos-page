@@ -11,10 +11,23 @@
             font-size: 2rem;
             font-weight: bold;
         }
+        body {
+            width: 50vw;
+        }
     </style>
 </head>
 <body>
     <h1>Hello world!</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facilis nobis officiis quos aperiam, dolorum repudiandae reiciendis magni et, consequatur, odit mollitia deserunt temporibus. Rerum, officiis nobis quam adipisci nesciunt voluptas cumque corporis id odit, asperiores rem quae omnis. Cupiditate rerum eaque officia eum, neque officiis numquam sapiente a, natus ut recusandae doloremque quibusdam animi beatae maiores aperiam inventore ducimus quod corporis tenetur? Sequi necessitatibus quaerat quae. Incidunt quod, hic in eaque minus harum architecto fuga reiciendis quis expedita fugit aliquid ducimus illo ipsam delectus dolores, quia provident! Reiciendis, ullam quis? Id repellendus libero minus hic sequi consectetur fugiat voluptatibus.</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fuga esse nobis porro sequi, at eligendi exercitationem dolore doloribus distinctio voluptatem, recusandae sit nisi tempore numquam? Aliquam iusto quod repudiandae placeat vero a numquam amet ipsam, officia consequatur ducimus unde expedita adipisci dolores modi consequuntur pariatur magnam reiciendis incidunt delectus repellat temporibus, laboriosam voluptate? Dignissimos, debitis? Quos facere officiis, eaque, quisquam accusantium aperiam maxime laudantium pariatur accusamus deserunt quis sequi exercitationem molestias nisi dolore inventore facilis at adipisci quae necessitatibus impedit eos! Ad tempore necessitatibus voluptas quae nulla magnam at? Necessitatibus quod quam in, illum debitis nulla. Perspiciatis assumenda quae, placeat inventore rerum, unde libero velit distinctio, necessitatibus laboriosam tempora impedit? Libero laudantium accusamus, obcaecati voluptate in tenetur. Hic natus dolorem illum, dicta optio perferendis suscipit animi voluptate repellat voluptatem ratione enim cumque inventore accusamus est, similique exercitationem? Similique qui illo id quo? Obcaecati perspiciatis laborum explicabo nulla? Voluptatum neque animi officia illo debitis repellendus eos quibusdam ut incidunt dicta atque placeat dolore, tenetur error cum doloribus et unde nesciunt. Nulla eos impedit dolor mollitia suscipit nemo, quod repellat et nostrum nobis quaerat, facere ullam magnam vitae ducimus quae quidem cumque quisquam dolores voluptate a? Commodi soluta nostrum obcaecati laudantium.</p>
+    <script>
+        window.addEventListener('load', function() {
+            let message = { height: document.body.contentHeight};	
+
+            // window.top refers to parent window
+            window.top.postMessage(message, "*");
+        });
+    </script>
 </body>
 </html>

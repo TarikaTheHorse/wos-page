@@ -7,19 +7,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 </head>
 <body>
-    <iframe src="https://tarikathehorse.github.io/wos-page/HEI-club/club-page.html" frameborder="0" width="100%" height="100%"></iframe>
-    <button onclick="changeHeight()">
-        Click to change
-    </button>
-  
+    <iframe src="HEI-club/club-page.html" id="child-iframe" frameborder="0" width="100%"></iframe>
     <script>
-      
-        // JavaScript code to change the
-        // height to 100% of <iframe>
-        function changeHeight() {
-            var x = document.getElementById('iframe');
-            x.style.height = "100%";
-        }
+	let iframe = document.querySelector("#child-iframe");
+
+    iframe.addEventListener('load', function() {
+        setInterval(function() {
+            iframe.style.height = iframe.contentDocument.body.scrollHeight + 'px';
+        }, 500);
+    });	
     </script>
 </body>
 </html>
