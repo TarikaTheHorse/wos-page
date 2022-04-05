@@ -6,7 +6,7 @@ $darkertan: darken($tan, 25%)
 $text-border: 2px solid $darkertan
 *
     max-width: 100vw
-width: 100%
+    width: 100%
     background-color: transparent
 body
     margin: 0
@@ -19,7 +19,7 @@ img
     margin: 0
 abbr
     cursor: pointer
-    text-decoration-color: red
+    text-decoration: underline dotted $tan
     font-weight: bold
 h2, h3
     font-family: 'orlando-caps'
@@ -74,25 +74,27 @@ header
     content: '***'
 .outdated
     text-decoration: line-through
-.show-schedule
-    display: flex
-    flex-direction: row
-    justify-content: space-evenly
-    align-items: center
+table
+    table-layout: fixed
     text-align: center
-.show-date-slot
-    display: flex
-    flex-direction: column
-    justify-content: space-evenly
-    align-items: center
-    .show-info
-        display: flex
-        flex-direction: row
-        justify-content: space-evenly
-        align-items: center
-        p
-            margin: 0
-            width: auto
+    border-collapse: collapse
+    border-style: hidden
+    max-width: 90vw
+    margin: 5rem auto 0 auto
+    border-top: $text-border
+.tableTitle
+    font: 2rem 'orlando-caps'
+    color: $darkertan
+    border-bottom: $text-border
+    border-top: $text-border
+    width: auto
+.tableSubtitle, .tableSubtitle
+    color: $darkertan
+    font-weight: bolder
+td, th:not(.tableTitle)
+    border: 1px solid gray  
+th
+    font-size: 1.25rem
 .prize-list
     ul
         list-style: '\27A4\00A0'

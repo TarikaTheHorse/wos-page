@@ -28,8 +28,8 @@ img {
 
 abbr {
   cursor: pointer;
-  -webkit-text-decoration-color: red;
-          text-decoration-color: red;
+  -webkit-text-decoration: underline dotted #df9f6b;
+          text-decoration: underline dotted #df9f6b;
   font-weight: bold;
 }
 
@@ -129,58 +129,35 @@ header hr {
   text-decoration: line-through;
 }
 
-.show-schedule {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+table {
+  table-layout: fixed;
   text-align: center;
+  border-collapse: collapse;
+  border-style: hidden;
+  max-width: 90vw;
+  margin: 5rem auto 0 auto;
+  border-top: 2px solid #a75f24;
 }
 
-.show-date-slot {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.show-date-slot .show-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.show-date-slot .show-info p {
-  margin: 0;
+.tableTitle {
+  font: 2rem 'orlando-caps';
+  color: #a75f24;
+  border-bottom: 2px solid #a75f24;
+  border-top: 2px solid #a75f24;
   width: auto;
+}
+
+.tableSubtitle, .tableSubtitle {
+  color: #a75f24;
+  font-weight: bolder;
+}
+
+td, th:not(.tableTitle) {
+  border: 1px solid gray;
+}
+
+th {
+  font-size: 1.25rem;
 }
 
 .prize-list {
