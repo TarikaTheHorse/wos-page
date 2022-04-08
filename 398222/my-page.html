@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
+	<link rel="stylesheet" href="my-page.css">
 </head>
 <body style="background: url('https://i.imgur.com/bSMXvf1.jpg') repeat;">
 <div style="text-align: center; font-family: Georgia, serif; min-width: 85vw; height: max-content; line-height: 1.3; font-size: 16px;">
@@ -273,13 +274,17 @@
 			</div>
 			<!-- Tab boxes -->
 			<div style="padding: 1rem; background: rgba(253, 254, 248, 0.7); border-radius: 0.5rem; border: 2px solid #1353b4;" id="fillers-gs">
-				<form name="tabButtons" style="display: grid; grid-template-columns: repeat(2, 1fr); place-items: center; width: 100%; height: 100%; font-family: 'Georgia';">
-					<input type="radio" id="smallTabInput" name="tab" checked style="appearance: none; width: 100%; grid-area: 1 / 1 / 2 / 2; background-color: #faf1b8; border: 0.25rem solid #f3d53f; border-radius: 0.5rem 0.5rem 0 0; height: 3rem; filter: drop-shadow(0.25rem -0.25rem 0.1rem rgba(0,0,0,0.5)); transition-duration: 100ms; box-sizing: border-box;">
-						<label id="smallTabLabel" style="grid-area: 1 / 1 / 2 / 2; font-size: 1.25rem; z-index: 0; color: black;">Fillers</label>
-					<input type="radio" id="smallTabInput" name="tab" style="appearance: none; width: 100%; grid-area: 1 / 2 / 2 / 3; background-color: #faf1b8; border: 0.25rem solid #f3d53f; border-radius: 0.5rem 0.5rem 0 0; height: 3rem; filter: drop-shadow(0.25rem -0.25rem 0.1rem rgba(0,0,0,0.5)); transition-duration: 100ms; box-sizing: border-box;">
-						<label id="smallTabLabel" style="grid-area: 1 / 2 / 2 / 3; font-size: 1.25rem; z-index: 0; color: black;">Graphic <wbr>Services</label>
-					<div style="grid-area: 2 / 1 / 3 / 3; width: 100%; height: 100%; border: 0.25rem solid #f3d53f; border-top: 0; background-color: #fdfef8; border-radius: 0 0 0.5rem 0.5rem; box-sizing: border-box;">
-						<div id="smallTabContent" style="display: none; padding: 1rem;">
+				<form style="display: grid; grid-template-columns: repeat(2, 1fr); place-items: center; width: 100%; height: 100%; font-family: 'Georgia';">
+					<input type="radio" name="TIS" id="TabInputS" checked style="appearance: none; width: 100%; grid-area: 1 / 1 / 2 / 2; background-color: #faf1b8; border: 0.25rem solid #f3d53f; border-radius: 0.5rem 0.5rem 0 0; height: 3rem; filter: drop-shadow(0.25rem -0.25rem 0.1rem rgba(0,0,0,0.5)); transition-duration: 100ms; box-sizing: border-box;">
+						<label id="TabLabelS" style="grid-area: 1 / 1 / 2 / 2; font-size: 1.25rem; z-index: 0; color: black;">Fillers</label>
+					<input type="radio" name="TIS" id="TabInputS" style="appearance: none; width: 100%; grid-area: 1 / 2 / 2 / 3; background-color: #faf1b8; border: 0.25rem solid #f3d53f; border-radius: 0.5rem 0.5rem 0 0; height: 3rem; filter: drop-shadow(0.25rem -0.25rem 0.1rem rgba(0,0,0,0.5)); transition-duration: 100ms; box-sizing: border-box;">
+						<label id="TabLabelS" style="grid-area: 1 / 2 / 2 / 3; font-size: 1.25rem; z-index: 0; color: black;">Graphic <wbr>Services</label>
+					<input type="radio" name="TIS" id="TabInputS" style="appearance: none; width: 100%; grid-area: 3 / 1 / 4 / 2; background-color: #faf1b8; border: 0.25rem solid #f3d53f; border-radius: 0 0 0.5rem 0.5rem; height: 3rem; filter: drop-shadow(0.25rem 0.25rem 0.1rem rgba(0,0,0,0.5)); transition-duration: 100ms; box-sizing: border-box;">
+						<label id="TabLabelS" style="grid-area: 3 / 1 / 4 / 2; font-size: 1.25rem; z-index: 0; color: black;">Show <wbr>Grades</label>
+					<input type="radio" name="TIS" id="TabInputS" style="appearance: none; width: 100%; grid-area: 3 / 2 / 4 / 3; background-color: #faf1b8; border: 0.25rem solid #f3d53f; border-radius: 0 0 0.5rem 0.5rem; height: 3rem; filter: drop-shadow(0.25rem 0.25rem 0.1rem rgba(0,0,0,0.5)); transition-duration: 100ms; box-sizing: border-box;">
+						<label id="TabLabelS" style="grid-area: 3 / 2 / 4 / 3; font-size: 1.25rem; z-index: 0; color: black;">Stable Show Schedule</label>
+					<div style="grid-area: 2 / 1 / 3 / 4; width: 100%; height: 100%; border: 0.25rem solid #f3d53f; border-top: 0; border-bottom: 0; background-color: #fdfef8; box-sizing: border-box;">
+						<div id="TabContentS" style="display: none; padding: 1rem;">
 							<div>
 								<img src="https://tarikathehorse.github.io/wos-page/images/horse1.svg" alt="" style="width: 25%; float: left; transform: rotateY(180deg); order: 1;">
 								<img src="https://tarikathehorse.github.io/wos-page/images/horse1.svg" alt="" style="width: 25%; float: right; order: 3;">
@@ -291,7 +296,7 @@
 								<button type="button" id="filler-account" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); border: 0.25rem solid #f3d53f; border-radius: 0.5rem; font: 1.25rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer;">DoC's~Fillers</button>
 							</a>
 						</div>
-						<div id="smallTabContent" style="display: none; padding: 1rem;">
+						<div id="TabContentS" style="display: none; padding: 1rem;">
 							<div>
 								<img src="https://tarikathehorse.github.io/wos-page/images/hand-L.svg" alt="" style="width: 25%; float: left; order: 1;">
 								<img src="https://tarikathehorse.github.io/wos-page/images/hand-R.svg" alt="" style="width: 25%; float: right; order: 3;">
@@ -303,21 +308,112 @@
 								<button type="button" id="my-webpage" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); border: 0.25rem solid #f3d53f; border-radius: 0.5rem; font: 1.25rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer;">My Webpage</button>
 							</a>
 						</div>
+						<div id="TabContentS" style="display: none; padding: 1rem;">
+							<h2 style="font-size: 1.5rem; margin: 1rem 0; order: 2;">Show <wbr>Grades</h2>
+							<img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Filet_rhombe.svg" alt="" style="width: 45%;">
+							<ul style="list-style-type: none; padding: 0; margin: 0; width: 100%;">
+								<li>C: 0 - 2</li>
+								<li>B: 3 - 10</li>
+								<li>A: 11 - 20</li>
+								<li>Grand Prix: 21 - 35</li>
+								<li>Olympic: 36+</li>
+							</ul>
+						</div>
+						<div id="TabContentS" style="display: none; padding: 1rem;">
+							<h2 style="font-size: 1.5rem; margin: 1rem 0; order: 2;">Show <wbr>Schedule</h2>
+							<img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Filet_rhombe.svg" alt="" style="width: 45%;">
+							<p>Stable shows!<br>More shows available upon request! :) I can do up to 5 per day!</p>
+							<table style="width: 100%;">
+								<thead>
+									<tr><th colspan="4">April 2022</th></tr>
+									<tr>
+										<th>:horsehead:</th>
+										<th>Tuesday</th>
+										<th>Thursday</th>
+										<th>Saturday</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>4/3 - 4/9</th>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+									</tr>
+									<tr>
+										<th>4/10 - 4/16</th>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+									</tr>
+									<tr>
+										<th>4/17 - 4/23</th>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+									</tr>
+									<tr>
+										<th>4/24 - 4/30</th>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+									</tr>
+								</tbody>
+							</table>
+							<p>Haute Ecole - Iberian club shows!</p>
+							<table style="width: 100%; border-collapse: collapse;">
+								<thead>
+									<tr><th colspan="4">April 2022</th></tr>
+									<tr>
+										<th>:horsehead:</th>
+										<th>Monday</th>
+										<th>Wednesday</th>
+										<th>Friday</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>4/3 - 4/9</th>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;">Dressage - B circuit</td>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;">Halter - B circuit</td>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;">Hunt Seat - B circuit</td>
+									</tr>
+									<tr>
+										<th>4/10 - 4/16</th>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+									</tr>
+									<tr>
+										<th>4/17 - 4/23</th>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+									</tr>
+									<tr>
+										<th>4/24 - 4/30</th>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+										<td style="font-size: 0.75rem; border: 1px solid #f3d53f;"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</form>
 			</div>
 		</div>
 		<!-- Breeding Info / Lines / Updates -->
 		<div style="grid-area: 2 / 1 / 3 / 2; width: 100%; height: 100%; background: rgba(253, 254, 248, 0.7); border-radius: 0.5rem; border: 2px solid #1353b4; width: 100%; height: 100%; box-sizing: border-box; padding: 1rem;">
-			<form name="tabButtons" style="display: grid; place-items: center; width: 100%; height: 100%; font-family: 'Georgia';">
-				<input type="radio" id="bigTabInput" name="tabb" checked style="grid-area: 1 / 1 / 2 / 2; appearance: none; width: 100%; background-color: #faf1b8; border: 0.25rem solid #f3d53f; border-radius: 0.5rem 0.5rem 0 0; height: 3rem; filter: drop-shadow(0.25rem -0.25rem 0.1rem rgba(0,0,0,0.5)); transition-duration: 100ms; box-sizing: border-box;">
-					<label id="bigTabLabel" style="grid-area: 1 / 1 / 2 / 2; font-size: 1.25rem; z-index: 0; color: black;">Breedings</label>
-				<input type="radio" id="bigTabInput" name="tabb" style="grid-area: 1 / 2 / 2 / 3; appearance: none; width: 100%; background-color: #faf1b8; border: 0.25rem solid #f3d53f; border-radius: 0.5rem 0.5rem 0 0; height: 3rem; filter: drop-shadow(0.25rem -0.25rem 0.1rem rgba(0,0,0,0.5)); transition-duration: 100ms; box-sizing: border-box;">
-					<label id="bigTabLabel" style="grid-area: 1 / 2 / 2 / 3; font-size: 1.25rem; z-index: 0; color: black;">Lines</label>
-				<input type="radio" id="bigTabInput" name="tabb" style="grid-area: 1 / 3 / 2 / 4; appearance: none; width: 100%; background-color: #faf1b8; border: 0.25rem solid #f3d53f; border-radius: 0.5rem 0.5rem 0 0; height: 3rem; filter: drop-shadow(0.25rem -0.25rem 0.1rem rgba(0,0,0,0.5)); transition-duration: 100ms; box-sizing: border-box;">
-					<label id="bigTabLabel" style="grid-area: 1 / 3 / 2 / 4; font-size: 1.25rem; z-index: 0; color: black;">Updates</label>
+			<form style="display: grid; place-items: center; width: 100%; height: 100%; font-family: 'Georgia';">
+				<input type="radio" name="TIB" id="TabInputB" name="tab" checked style="grid-area: 1 / 1 / 2 / 2; appearance: none; width: 100%; background-color: #faf1b8; border: 0.25rem solid #f3d53f; border-radius: 0.5rem 0.5rem 0 0; height: 3rem; filter: drop-shadow(0.25rem -0.25rem 0.1rem rgba(0,0,0,0.5)); transition-duration: 100ms; box-sizing: border-box;">
+					<label id="TabLabelB" style="grid-area: 1 / 1 / 2 / 2; font-size: 1.25rem; z-index: 0; color: black;">Breedings</label>
+				<input type="radio" name="TIB" id="TabInputB" name="tab" style="grid-area: 1 / 2 / 2 / 3; appearance: none; width: 100%; background-color: #faf1b8; border: 0.25rem solid #f3d53f; border-radius: 0.5rem 0.5rem 0 0; height: 3rem; filter: drop-shadow(0.25rem -0.25rem 0.1rem rgba(0,0,0,0.5)); transition-duration: 100ms; box-sizing: border-box;">
+					<label id="TabLabelB" style="grid-area: 1 / 2 / 2 / 3; font-size: 1.25rem; z-index: 0; color: black;">Lines</label>
+				<input type="radio" name="TIB" id="TabInputB" name="tab" style="grid-area: 1 / 3 / 2 / 4; appearance: none; width: 100%; background-color: #faf1b8; border: 0.25rem solid #f3d53f; border-radius: 0.5rem 0.5rem 0 0; height: 3rem; filter: drop-shadow(0.25rem -0.25rem 0.1rem rgba(0,0,0,0.5)); transition-duration: 100ms; box-sizing: border-box;">
+					<label id="TabLabelB" style="grid-area: 1 / 3 / 2 / 4; font-size: 1.25rem; z-index: 0; color: black;">Updates</label>
 				<div style="grid-area: 2 / 1 / 3 / 4; text-align: center; padding: 1rem; width: 100%; height: 100%; border: 0.25rem solid #f3d53f; border-top: 0; background-color: #fdfef8; border-radius: 0 0 0.5rem 0.5rem; box-sizing: border-box; max-height: 90vh; overflow-y: auto;">
-					<div id="bigTabContent" style="display: none;">
+					<div id="TabContentB" style="display: none;">
 						<img src="https://tarikathehorse.github.io/wos-page/images/horse&stableboy.svg" alt="" style="width: 25%; float: left;">
 						<img src="https://tarikathehorse.github.io/wos-page/images/horse&stableboy.svg" alt="" style="width: 25%; float: right; transform: rotateY(180deg);">
 						<h2 style="font-size: 1.5rem; margin: 1rem;">Breedings</h2>
@@ -338,7 +434,7 @@
 						<p style="font-size: 1rem;"><b>I reserve the right to withold breedings for any reason!</b>
 						<br><mark style="background-color: #f6e078;">Please message me before breeding!</mark></p>
 					</div>
-					<div id="bigTabContent" style="display: none;">
+					<div id="TabContentB" style="display: none;">
 						<table style="background-color: #f3d53f; text-align: center; margin: auto; table-layout: fixed; width: 100%;" cellspacing="1.75" cellpadding="4">
 							<tr><th colspan="4" style="background-color: #fdfef8;">
 								<img height="auto" width="15%" src="https://tarikathehorse.github.io/wos-page/images/ornament-10.svg" alt="" style="vertical-align: middle; transform: rotateY(180deg);">
@@ -481,7 +577,7 @@
 							</tr>
 						</table>
 					</div>
-					<div id="bigTabContent" style="display: none;">
+					<div id="TabContentB" style="display: none;">
 						<header>
 							<img src="https://tarikathehorse.github.io/wos-page/images/trumpeting-rider.svg" alt="" style="width: 25%; float: left; transform: rotateY(180deg);">
 							<img src="https://tarikathehorse.github.io/wos-page/images/trumpeting-rider.svg" alt="" style="width: 25%; float: right;">
@@ -836,8 +932,9 @@
 		<img width="45%" style="transform: rotateZ(180deg);" src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Harpel%E2%80%99s_flourish_5.svg" alt="">
 	</div>
 </div>
-<!-- Hover Effects -->
+<!-- JQuery -->
 <script>
+	// Button hover effect
 	$("button")
 		.bind( "mouseenter", function() {
 			$(this).css({
@@ -855,17 +952,18 @@
 				transitionDuration: "200ms",
 			});
 		})
-	$("[name=tabb]")
+	// Small tabs hover effect
+	$("[name=TIS]")
 		.bind( "mouseenter", function() {
 			var c = $(this).prop("checked");
-			var i = $('[name=tabb]').index(this);
+			var i = $('[name=TIS]').index(this);
 			$(this).css({
 				border: "0.25rem double #f3d53f",
 				borderBottom: "0.25rem solid #f3d53f",
 				transitionDuration: "200ms",
 				backgroundColor: "#1353b4",
 			});
-			$("form > #bigTabLabel").eq(i).css({
+			$("form > #TabLabelS").eq(i).css({
 				color: "white",
 				transitionDuration: "200ms",
 			});
@@ -874,20 +972,20 @@
 					borderBottom: "none",
 					backgroundColor: "#fdfef8",
 				});
-				$("form > #bigTabLabel").eq(i).css({
+				$("form > #TabLabelS").eq(i).css({
 					color: "black",
 				});
 			}
 		})
 		.bind( "mouseleave", function() {
 			var c = $(this).prop("checked");
-			var i = $('[name=tabb]').index(this);
+			var i = $('[name=TIS]').index(this);
 			$(this).css({
 				border: "0.25rem solid #f3d53f",
-				transitionDuration: "200ms",
 				backgroundColor: "#faf1b8",
+				transitionDuration: "200ms",
 			});
-			$("form > #bigTabLabel").eq(i).css({
+			$("form > #TabLabelS").eq(i).css({
 				color: "black",
 				transitionDuration: "200ms",
 			});
@@ -896,22 +994,24 @@
 					borderBottom: "none",
 					backgroundColor: "#fdfef8",
 				});
-				$("form > #bigTabLabel").eq(i).css({
+				$("form > #TabLabelS").eq(i).css({
 					color: "black",
 				});
 			}
 		})
-	$("[name=tab]")
+
+	// Big tabs hover effect
+	$("[name=TIB]")
 		.bind( "mouseenter", function() {
 			var c = $(this).prop("checked");
-			var i = $('[name=tab]').index(this);
+			var i = $('[name=TIB]').index(this);
 			$(this).css({
 				border: "0.25rem double #f3d53f",
 				borderBottom: "0.25rem solid #f3d53f",
 				transitionDuration: "200ms",
 				backgroundColor: "#1353b4",
 			});
-			$("form > #smallTabLabel").eq(i).css({
+			$("form > #TabLabelB").eq(i).css({
 				color: "white",
 				transitionDuration: "200ms",
 			});
@@ -920,20 +1020,20 @@
 					borderBottom: "none",
 					backgroundColor: "#fdfef8",
 				});
-				$("form > #smallTabLabel").eq(i).css({
+				$("form > #TabLabelB").eq(i).css({
 					color: "black",
 				});
 			}
 		})
 		.bind( "mouseleave", function() {
 			var c = $(this).prop("checked");
-			var i = $('[name=tab]').index(this);
+			var i = $('[name=TIB]').index(this);
 			$(this).css({
 				border: "0.25rem solid #f3d53f",
 				backgroundColor: "#faf1b8",
 				transitionDuration: "200ms",
 			});
-			$("form > #smallTabLabel").eq(i).css({
+			$("form > #TabLabelB").eq(i).css({
 				color: "black",
 				transitionDuration: "200ms",
 			});
@@ -942,73 +1042,70 @@
 					borderBottom: "none",
 					backgroundColor: "#fdfef8",
 				});
-				$("form > #smallTabLabel").eq(i).css({
+				$("form > #TabLabelB").eq(i).css({
 					color: "black",
 				});
 			}
 		})
-</script>
-<!-- Small Tabs -->
-<script>
-	$('[name=tab]').each(function(i,d){
+	// Small Tabs
+	$('[name=TIS]').each(function(i,d){
 		var p = $(this).prop('checked');
 	//   console.log(p);
 		if(p){
-			$('div > #smallTabContent').eq(i).css({display: "block"});
-			$('form > #smallTabLabel').eq(i).css({color: "black"});
-			$('form > #smallTabInput').eq(i).css({
+			$('div > #TabContentS').eq(i).css({display: "block"});
+			$('form > #TabLabelS').eq(i).css({color: "black"});
+			$('form > #TabInputS').eq(i).css({
 				borderBottom: "none",
 				borderRadius: "0.5rem 0.5rem 0 0",
 				backgroundColor: "#fdfef8",});
 		}    
 	});
-	$('[name=tab]').bind('change', function(){
+	$('[name=TIS]').bind('change', function(){
 		var p = $(this).prop('checked');
 		
 		// $(type).index(this) == nth-of-type
-		var i = $('[name=tab]').index(this);
+		var i = $('[name=TIS]').index(this);
 		
-		$('div > #smallTabContent').css({display: "none"});
-		$('div > #smallTabContent').eq(i).css({display: "block"});
-		$('form > #smallTabLabel').css({color: "black"});
-		$('form > #smallTabInput').css({
+		$('div > #TabContentS').css({display: "none"});
+		$('div > #TabContentS').eq(i).css({display: "block"});
+		$('form > #TabLabelS').css({color: "black"});
+		$('form > #TabInputS').css({
 			borderBottom: "0.25rem solid #f3d53f",
 			borderRadius: "0.5rem 0.5rem 0 0",
 			backgroundColor: "#faf1b8",});
-		$('form > #smallTabInput').eq(i).css({
+		$('form > #TabInputS').eq(i).css({
 			borderBottom: "none",
 			borderRadius: "0.5rem 0.5rem 0 0",
 			backgroundColor: "#fdfef8",});
 	});
-</script>
-<!-- Big Tabs -->
-<script>
-	$('[name=tabb]').each(function(i,d){
+
+	// Big Tabs
+	$('[name=TIB]').each(function(i,d){
 		var p = $(this).prop('checked');
 	//   console.log(p);
 		if(p){
-			$('div > #bigTabContent').eq(i).css({display: "block"});
-			$('form > #bigTabLabel').eq(i).css({color: "black"});
-			$('form > #bigTabInput').eq(i).css({
+			$('div > #TabContentB').eq(i).css({display: "block"});
+			$('form > #TabLabelB').eq(i).css({color: "black"});
+			$('form > #TabInputB').eq(i).css({
 				borderBottom: "none",
 				borderRadius: "0.5rem 0.5rem 0 0",
 				backgroundColor: "#fdfef8",});
 		}    
 	});
-	$('[name=tabb]').bind('change', function(){
+	$('[name=TIB]').bind('change', function(){
 		var p = $(this).prop('checked');
 		
 		// $(type).index(this) == nth-of-type
-		var i = $('[name=tabb]').index(this);
+		var i = $('[name=TIB]').index(this);
 		
-		$('div > #bigTabContent').css({display: "none"});
-		$('div > #bigTabContent').eq(i).css({display: "block"});
-		$('form > #bigTabLabel').css({color: "black"});
-		$('form > #bigTabInput').css({
+		$('div > #TabContentB').css({display: "none"});
+		$('div > #TabContentB').eq(i).css({display: "block"});
+		$('form > #TabLabelB').css({color: "black"});
+		$('form > #TabInputB').css({
 			borderBottom: "0.25rem solid #f3d53f",
 			borderRadius: "0.5rem 0.5rem 0 0",
 			backgroundColor: "#faf1b8",});
-		$('form > #bigTabInput').eq(i).css({
+		$('form > #TabInputB').eq(i).css({
 			borderBottom: "none",
 			borderRadius: "0.5rem 0.5rem 0 0",
 			backgroundColor: "#fdfef8",});
