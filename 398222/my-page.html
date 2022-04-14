@@ -5,275 +5,244 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
 	<link rel="stylesheet" href="my-page.css">
 </head>
-<body style="background: url('https://i.imgur.com/bSMXvf1.jpg') repeat;">
-<div style="text-align: center; font-family: Georgia, serif; min-width: 85vw; height: max-content; line-height: 1.3; font-size: 16px;">
+<body>
 	<!-- Top Banner -->
 	<div>
 		<img width="45%" src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Crown_tailpiece%2C_Velhagen_%26_Klasings_Monatshefte%2C_1911%E2%80%931912%2C_01.svg" alt="">
 	</div>
 	<!-- Title and Introduction -->
 	<div>
-		<h1 style="text-shadow: 4px 4px 3px #ababab; font-size: 2.8125em; font-variant: small-caps;">Welcome to the Royal Stables of Amicran!</h1>
-		<hr style="height: 1px; background: #aaa;">
-		<h2 style="font-size: 1.875rem; margin-bottom: 0.5rem; margin: 1rem;">Duchess of Canterbury, Manager</h2>
-		<img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Harpel%E2%80%99s_flourish_5.svg" alt="" style="width: 25%; margin: 1rem; margin-top: 0;">
+		<h1>Welcome to the Royal Stables of Amicran!</h1>
+		<hr>
+		<h2>Duchess of Canterbury, Manager</h2>
+		<img class="flourish" src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Harpel%E2%80%99s_flourish_5.svg" alt="" >
 	</div>
-	<!-- Slideshow and About Me -->
-	<div style="font-size: 1rem; display: grid; grid-template-columns: 50% 50%; grid-template-rows: auto; gap: 1em; max-width: 95vw; margin: auto;" id="info">
+	<!-- Slideshow and Info-->
+	<div class="mainGrid">
 		<!-- Slideshow -->
-		<div style="grid-area: 1 / 1 / 2 / 2; width: 40vw; margin: auto;" id="slideshow" class="slideshow">
-			<div style="display: flex; place-content: center; flex-direction: row;">
-				<a href="#slide-1" style="display: inline-flex; width: 1.5rem; height: 1.5rem; background: white; border: #f6e078 solid 2px; text-decoration: none; align-items: baseline; justify-content: center; border-radius: 50%; margin: 0.5rem 0.1rem; font: 1rem 'Georgia';">1</a>
-				<a href="#slide-2" style="display: inline-flex; width: 1.5rem; height: 1.5rem; background: white; border: #f6e078 solid 2px; text-decoration: none; align-items: baseline; justify-content: center; border-radius: 50%; margin: 0.5rem 0.1rem; font: 1rem 'Georgia';">2</a>
-				<a href="#slide-3" style="display: inline-flex; width: 1.5rem; height: 1.5rem; background: white; border: #f6e078 solid 2px; text-decoration: none; align-items: baseline; justify-content: center; border-radius: 50%; margin: 0.5rem 0.1rem; font: 1rem 'Georgia';">3</a>
-				<a href="#slide-4" style="display: inline-flex; width: 1.5rem; height: 1.5rem; background: white; border: #f6e078 solid 2px; text-decoration: none; align-items: baseline; justify-content: center; border-radius: 50%; margin: 0.5rem 0.1rem; font: 1rem 'Georgia';">4</a>
-				<a href="#slide-5" style="display: inline-flex; width: 1.5rem; height: 1.5rem; background: white; border: #f6e078 solid 2px; text-decoration: none; align-items: baseline; justify-content: center; border-radius: 50%; margin: 0.5rem 0.1rem; font: 1rem 'Georgia';">5</a>
-				<a href="#slide-6" style="display: inline-flex; width: 1.5rem; height: 1.5rem; background: white; border: #f6e078 solid 2px; text-decoration: none; align-items: baseline; justify-content: center; border-radius: 50%; margin: 0.5rem 0.1rem; font: 1rem 'Georgia';">6</a>
-				<a href="#slide-7" style="display: inline-flex; width: 1.5rem; height: 1.5rem; background: white; border: #f6e078 solid 2px; text-decoration: none; align-items: baseline; justify-content: center; border-radius: 50%; margin: 0.5rem 0.1rem; font: 1rem 'Georgia';">7</a>
-				<a href="#slide-8" style="display: inline-flex; width: 1.5rem; height: 1.5rem; background: white; border: #f6e078 solid 2px; text-decoration: none; align-items: baseline; justify-content: center; border-radius: 50%; margin: 0.5rem 0.1rem; font: 1rem 'Georgia';">8</a>
-				<a href="#slide-9" style="display: inline-flex; width: 1.5rem; height: 1.5rem; background: white; border: #f6e078 solid 2px; text-decoration: none; align-items: baseline; justify-content: center; border-radius: 50%; margin: 0.5rem 0.1rem; font: 1rem 'Georgia';">9</a>
-				<a href="#slide-10" style="display: inline-flex; width: 1.5rem; height: 1.5rem; background: white; border: #f6e078 solid 2px; text-decoration: none; align-items: baseline; justify-content: center; border-radius: 50%; margin: 0.5rem 0.1rem; font: 1rem 'Georgia';">10</a>
-				<a href="#slide-11" style="display: inline-flex; width: 1.5rem; height: 1.5rem; background: white; border: #f6e078 solid 2px; text-decoration: none; align-items: baseline; justify-content: center; border-radius: 50%; margin: 0.5rem 0.1rem; font: 1rem 'Georgia';">11</a>
-				<a href="#slide-12" style="display: inline-flex; width: 1.5rem; height: 1.5rem; background: white; border: #f6e078 solid 2px; text-decoration: none; align-items: baseline; justify-content: center; border-radius: 50%; margin: 0.5rem 0.1rem; font: 1rem 'Georgia';">12</a>
-				<a href="#slide-13" style="display: inline-flex; width: 1.5rem; height: 1.5rem; background: white; border: #f6e078 solid 2px; text-decoration: none; align-items: baseline; justify-content: center; border-radius: 50%; margin: 0.5rem 0.1rem; font: 1rem 'Georgia';">13</a>
-			</div>
-			<div class="container" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; overflow-x: scroll; scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; font: 1rem 'Georgia';">
-				<div class="slide" id="slide-1" style="scroll-snap-align: start; flex: 1 0 100%; height: 40vw; margin: 0 1.5rem 0 1.5rem; background: #fdfef8; border-radius: 0.5rem; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; overflow: auto; gap: 1rem;">
-					<img title="Coat of Arms of the Duchess" src="https://upload.wikimedia.org/wikipedia/commons/2/26/Coat_of_Arms_of_the_Duke_of_Norfolk%2C_the_Earl_Marshal.svg" alt="Coat of Arms of the Duke of Norfolk, the Earl Marshal.svg" style="object-fit: contain; max-width: 90%; max-height: 80%; border-radius: 0.5rem;">
-					<div style="width: 100%;">
-						<details style="width: 90%; height: auto; margin: auto; padding: 0.4rem; background: #FFF; border: 2px solid #f6e078; border-radius: 0.5rem; cursor: pointer;">
+		<div class="slideshowContainer">
+			<nav class="slideshowNav">
+				<a class="slideshowNavButton" href="#slide-1">1</a>
+				<a class="slideshowNavButton" href="#slide-2">2</a>
+				<a class="slideshowNavButton" href="#slide-3">3</a>
+				<a class="slideshowNavButton" href="#slide-4">4</a>
+				<a class="slideshowNavButton" href="#slide-5">5</a>
+				<a class="slideshowNavButton" href="#slide-6">6</a>
+				<a class="slideshowNavButton" href="#slide-7">7</a>
+				<a class="slideshowNavButton" href="#slide-8">8</a>
+				<a class="slideshowNavButton" href="#slide-9">9</a>
+				<a class="slideshowNavButton" href="#slide-10">10</a>
+				<a class="slideshowNavButton" href="#slide-11">11</a>
+				<a class="slideshowNavButton" href="#slide-12">12</a>
+				<a class="slideshowNavButton" href="#slide-13">13</a>
+			</nav>
+			<div class="slideshowSlideContainer">
+				<div class="slideshowSlide" id="slide-1">
+					<img title="Coat of Arms of the Duchess" src="https://upload.wikimedia.org/wikipedia/commons/2/26/Coat_of_Arms_of_the_Duke_of_Norfolk%2C_the_Earl_Marshal.svg" alt="Coat of Arms of the Duke of Norfolk, the Earl Marshal.svg">
+					<div class="copyrightContainer">
+						<details>
 							<summary>Image Copyright Information</summary>
-							<div>
-							By <a href="//commons.wikimedia.org/wiki/User:Sodacan" title="User:Sodacan" style="font: 1rem 'Georgia';">Sodacan</a> - This W3C-unspecified <a href="https://en.wikipedia.org/wiki/Vector_images" class="extiw" title="w:Vector images" style="font: 1em 'Georgia';">vector image</a> was created with <a href="https://en.wikipedia.org/wiki/Inkscape" class="extiw" title="w:Inkscape" style="font: 1rem 'Georgia';">Inkscape</a>. - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0" style="font: 1em 'Georgia';">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=14690578" style="font: 1rem 'Georgia';">Link</a>
-							</div>
+							By <a href="//commons.wikimedia.org/wiki/User:Sodacan">Sodacan</a> - This W3C-unspecified <a href="https://en.wikipedia.org/wiki/Vector_images">vector image</a> was created with <a href="https://en.wikipedia.org/wiki/Inkscape">Inkscape</a>. - Own work, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=14690578">Link</a>
 						</details>
 					</div>
 				</div>
-				<div class="slide" id="slide-2" style="scroll-snap-align: start; flex: 1 0 100%; height: 40vw; margin: 0 1.5rem 0 1.5rem; background: #fdfef8; border-radius: 0.5rem; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; overflow: auto; gap: 1rem;">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Lipizzaner_Brdo_20080610_2.jpg" style="object-fit: contain; max-width: 90%; max-height: 80%; border-radius: 0.5rem;">
-					<div style="width: 90%;">
+				<div class="slideshowSlide" id="slide-2">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Lipizzaner_Brdo_20080610_2.jpg">
+					<div class="slideshowText">
 						<hr>
 						<h4>Riders of the Royal Riding School present their horses in an event for the Royal Family.</h4>
 						<hr>
 					</div>
-					<div style="width: 100%;">
-						<details style="width: 90%; height: auto; margin: auto; padding: 0.4rem; background: #FFF; border: 2px solid #f6e078; border-radius: 0.5rem; cursor: pointer;">
+					<div class="copyrightContainer">
+						<details>
 							<summary>Image Copyright Information</summary>
-							<div>
-								By White House photo by Eric Draper - <a rel="nofollow" class="external free" href="https://www.whitehouse.gov/news/releases/2008/06/images/20080610-8_d-0661-1-515h.html" style="font: 1rem 'Georgia';">WH Press Release</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=4399025" style="font: 1em 'Georgia';">Link</a>
-							</div>
+							By White House photo by Eric Draper - <a href="https://www.whitehouse.gov/news/releases/2008/06/images/20080610-8_d-0661-1-515h.html">WH Press Release</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=4399025">Link</a>
 						</details>
 					</div>
 				</div>
-				<div class="slide" id="slide-3" style="scroll-snap-align: start; flex: 1 0 100%; height: 40vw; margin: 0 1.5rem 0 1.5rem; background: #fdfef8; border-radius: 0.5rem; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; overflow: auto; gap: 1rem;">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Lipicanec_PRMO.jpg" style="object-fit: contain; max-width: 90%; max-height: 80%; border-radius: 0.5em;">
-					<div style="width: 90%;">
+				<div class="slideshowSlide" id="slide-3">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Lipicanec_PRMO.jpg">
+					<div class="slideshowText">
 						<hr>
 						<h4>RSA Theresa, a mare of the Royal Lipizzan stud at Blumenfeld, enjoys her time in a field.</h4>
 						<hr>
 					</div>
-					<div style="width: 100%;">
-						<details style="width: 90%; height: auto; margin: auto; padding: 0.4rem; background: #FFF; border: 2px solid #f6e078; border-radius: 0.5rem; cursor: pointer;">
+					<div class="copyrightContainer">
+						<details>
 							<summary>Image Copyright Information</summary>
-							<div>
-								By Srdjan Živulovič - This picture was previously uploaded at the Slovene wiki as <a href="https://en.wikipedia.org/wiki/sl:Slika:Lipicanec_PRMO.jpg" class="extiw" title="w:sl:Slika:Lipicanec PRMO.jpg" style="font: 1rem 'Georgia';">w:sl:Slika:Lipicanec PRMO.jpg</a> and was originally published here: <a rel="nofollow" class="external free" href="http://www.uvi.si/eng/slovenia/photos/heritage/034/index.html" style="font: 1rem 'Georgia';">http://www.uvi.si/eng/slovenia/photos/heritage/034/index.html</a>, Attribution, <a href="https://commons.wikimedia.org/w/index.php?curid=18473075" style="font: 1rem 'Georgia';">Link</a>
-							</div>
+							By Srdjan Živulovič - This picture was previously uploaded at the Slovene wiki as <a href="https://en.wikipedia.org/wiki/sl:Slika:Lipicanec_PRMO.jpg">w:sl:Slika:Lipicanec PRMO.jpg</a> and was originally published here: <a href="http://www.uvi.si/eng/slovenia/photos/heritage/034/index.html">http://www.uvi.si/eng/slovenia/photos/heritage/034/index.html</a>, Attribution, <a href="https://commons.wikimedia.org/w/index.php?curid=18473075">Link</a>
 						</details>
 					</div>
 				</div>
-				<div class="slide" id="slide-4" style="scroll-snap-align: start; flex: 1 0 100%; height: 40vw; margin: 0 1.5rem 0 1.5rem; background: #fdfef8; border-radius: 0.5rem; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; overflow: auto; gap: 1rem;">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Ludwig_Koch_Lipizzaner.jpg" style="object-fit: contain; max-width: 90%; max-height: 80%; border-radius: 0.5em;">
-					<div style="width: 90%;">
+				<div class="slideshowSlide" id="slide-4">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Ludwig_Koch_Lipizzaner.jpg">
+					<div class="slideshowText">
 						<hr>
 						<h4>The late rider Andrew Schleppenfeld and RSA Peter.</h4>
 						<hr>
 					</div>
-					<div style="width: 100%;">
-						<details style="width: 90%; height: auto; margin: auto; padding: 0.4rem; background: #FFF; border: 2px solid #f6e078; border-radius: 0.5rem; cursor: pointer;">
+					<div class="copyrightContainer">
+						<details>
 							<summary>Image Copyright Information</summary>
-							<div>
-								By <a href="https://en.wikipedia.org/wiki/en:Ludwig_Koch_(painter)" class="extiw" title="w:en:Ludwig Koch (painter)" style="font: 1rem 'Georgia';"><span title="Austrian artist (1866-1934)">Ludwig Koch</span></a> - <a rel="nofollow" class="external free" href="http://www.dorotheum.com/" style="font: 1rem 'Georgia';">http://www.dorotheum.com/</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=68527330" style="font: 1rem 'Georgia';">Link</a>
-							</div>
+							By <a href="https://en.wikipedia.org/wiki/en:Ludwig_Koch_(painter)"><span title="Austrian artist (1866-1934)">Ludwig Koch</span></a> - <a href="http://www.dorotheum.com/">http://www.dorotheum.com/</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=68527330">Link</a>
 						</details>
 					</div>
 				</div>
-				<div class="slide" id="slide-5" style="scroll-snap-align: start; flex: 1 0 100%; height: 40vw; margin: 0 1.5rem 0 1.5rem; background: #fdfef8; border-radius: 0.5rem; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; overflow: auto; gap: 1rem;">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Lipiza%2C_Slovenia_2015._Lipizzan_Horses_%2822865009162%29.jpg" style="object-fit: contain; max-width: 90%; max-height: 80%; border-radius: 0.5em;">
-					<div style="width: 90%;">
+				<div class="slideshowSlide" id="slide-5">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Lipiza%2C_Slovenia_2015._Lipizzan_Horses_%2822865009162%29.jpg">
+					<div class="slideshowText">
 						<hr>
 						<h4>RSA Frederick, RSA Theresa, and RSA Edward during their time at the Royal Stud Blumenfeld.</h4>
 						<hr>
 					</div>
-					<div style="width: 100%;">
-						<details style="width: 90%; height: auto; margin: auto; padding: 0.4rem; background: #FFF; border: 2px solid #f6e078; border-radius: 0.5rem; cursor: pointer;">
+					<div class="copyrightContainer">
+						<details>
 							<summary>Image Copyright Information</summary>
-							<div>
-								By <a rel="nofollow" class="external text" href="https://www.flickr.com/people/11417420@N07" style="font: 1rem 'Georgia';">Maurizio Costanzo</a> from Trieste, Italia <a rel="nofollow" class="external text" href="https://www.flickr.com/photos/maurizio_costanzo/22865009162/" style="font: 1rem 'Georgia';">Lipiza, Slovenia 2015. Lipizzan Horses</a>, <a href="https://creativecommons.org/licenses/by/2.0" title="Creative Commons Attribution 2.0" style="font: 1rem 'Georgia';">CC BY 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=44913264" style="font: 1rem 'Georgia';">Link</a>
-							</div>
+							By <a href="https://www.flickr.com/people/11417420@N07">Maurizio Costanzo</a> from Trieste, Italia <a href="https://www.flickr.com/photos/maurizio_costanzo/22865009162/">Lipiza, Slovenia 2015. Lipizzan Horses</a>, <a href="https://creativecommons.org/licenses/by/2.0" title="Creative Commons Attribution 2.0">CC BY 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=44913264">Link</a>
 						</details>
 					</div>
 				</div>
-				<div class="slide" id="slide-6" style="scroll-snap-align: start; flex: 1 0 100%; height: 40vw; margin: 0 1.5rem 0 1.5rem; background: #fdfef8; border-radius: 0.5rem; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; overflow: auto; gap: 1rem;">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Lipizzaner_2013.jpg" style="object-fit: contain; max-width: 90%; max-height: 80%; border-radius: 0.5em;">
-					<div style="width: 90%;">
+				<div class="slideshowSlide" id="slide-6">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Lipizzaner_2013.jpg">
+					<div class="slideshowText">
 						<hr>
 						<h4>At the Royal Stud, young foals wait for their first moult, which will eventually give way to their true beautiful white color around age 7-10.</h4>
 						<hr>
 					</div>
-					<div style="width: 100%;">
-						<details style="width: 90%; height: auto; margin: auto; padding: 0.4rem; background: #FFF; border: 2px solid #f6e078; border-radius: 0.5rem; cursor: pointer;">
+					<div class="copyrightContainer">
+						<details>
 							<summary>Image Copyright Information</summary>
-							<div>
-								By <a rel="nofollow" class="external text" href="http://pixabay.com/en/users/MemoryCatcher-168384/" style="font: 1rem 'Georgia';">MemoryCatcher</a> - <a rel="nofollow" class="external free" href="http://pixabay.com/en/foal-horses-isolate-colt-equine-649699/" style="font: 1rem 'Georgia';">http://pixabay.com/en/foal-horses-isolate-colt-equine-649699/</a>,<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" title="Creative Commons Zero, Public Domain Dedication" style="font: 1rem 'Georgia';">CC0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=39297218" style="font: 1rem 'Georgia';">Link</a>
-							</div>
+							By <a href="http://pixabay.com/en/users/MemoryCatcher-168384/">MemoryCatcher</a> - <a href="http://pixabay.com/en/foal-horses-isolate-colt-equine-649699/">http://pixabay.com/en/foal-horses-isolate-colt-equine-649699/</a>,<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" title="Creative Commons Zero, Public Domain Dedication">CC0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=39297218">Link</a>
 						</details>
 					</div>
 				</div>
-				<div class="slide" id="slide-7" style="scroll-snap-align: start; flex: 1 0 100%; height: 40vw; margin: 0 1.5rem 0 1.5rem; background: #fdfef8; border-radius: 0.5rem; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; overflow: auto; gap: 1rem;">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Lipizzaner_Conversano_Traviata.jpg" style="object-fit: contain; max-width: 90%; max-height: 80%; border-radius: 0.5em;">
-					<div style="width: 90%;">
+				<div class="slideshowSlide" id="slide-7">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Lipizzaner_Conversano_Traviata.jpg">
+					<div class="slideshowText">
 						<hr>
 						<h4>RSA Theresa</h4>
 						<hr>
 					</div>
-					<div style="width: 100%;">
-						<details style="width: 90%; height: auto; margin: auto; padding: 0.4rem; background: #FFF; border: 2px solid #f6e078; border-radius: 0.5rem; cursor: pointer;">
+					<div class="copyrightContainer">
+						<details>
 							<summary>Image Copyright Information</summary>
-							<div>
-								By <a href="//commons.wikimedia.org/w/index.php?title=User:AtjanHop&amp;amp;action=edit&amp;amp;redlink=1" class="new" title="User:AtjanHop (page does not exist)" style="font: 1rem 'Georgia';">AtjanHop</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" title="Creative Commons Zero, Public Domain Dedication" style="font: 1rem 'Georgia';">CC0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=22158358" style="font: 1rem 'Georgia';">Link</a>
-							</div>
+							By <a href="//commons.wikimedia.org/w/index.php?title=User:AtjanHop&amp;amp;action=edit&amp;amp;redlink=1">AtjanHop</a> - Own work, <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" title="Creative Commons Zero, Public Domain Dedication">CC0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=22158358">Link</a>
 						</details>
 					</div>
 				</div>
-				<div class="slide" id="slide-8" style="scroll-snap-align: start; flex: 1 0 100%; height: 40vw; margin: 0 1.5rem 0 1.5rem; background: #fdfef8; border-radius: 0.5rem; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; overflow: auto; gap: 1rem;">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Lipizzaner_%284385422717%29.jpg" style="object-fit: contain; max-width: 90%; max-height: 80%; border-radius: 0.5em;">
-					<div style="width: 90%;">
+				<div class="slideshowSlide" id="slide-8">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Lipizzaner_%284385422717%29.jpg">
+					<div class="slideshowText">
 						<hr>
 						<h4>RSA Frederick, RSA Theresa, and RSA Edward show off thier <i>haute &eacute;cole</i> at a public presentation.</h4>
 						<hr>
 					</div>
-					<div style="width: 100%;">
-						<details style="width: 90%; height: auto; margin: auto; padding: 0.4rem; background: #FFF; border: 2px solid #f6e078; border-radius: 0.5rem; cursor: pointer;">
+					<div class="copyrightContainer">
+						<details>
 							<summary>Image Copyright Information</summary>
-							<div>
-								By <a rel="nofollow" class="external text" href="https://www.flickr.com/people/46824267@N04" style="font: 1rem 'Georgia';">kjulym7w28</a> - <a rel="nofollow" class="external text" href="https://www.flickr.com/photos/46824267@N04/4385422717/" style="font: 1rem 'Georgia';">P1020066</a> Uploaded by <a href="//commons.wikimedia.org/wiki/User:Sporti" title="User:Sporti" style="font: 1rem 'Georgia';">sporti</a>, <a href="https://creativecommons.org/licenses/by/2.0" title="Creative Commons Attribution 2.0" style="font: 1rem 'Georgia';">CC BY 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=27193496" style="font: 1rem 'Georgia';">Link</a>
-							</div>
+							By <a href="https://www.flickr.com/people/46824267@N04">kjulym7w28</a> - <a href="https://www.flickr.com/photos/46824267@N04/4385422717/">P1020066</a> Uploaded by <a href="//commons.wikimedia.org/wiki/User:Sporti">sporti</a>, <a href="https://creativecommons.org/licenses/by/2.0" title="Creative Commons Attribution 2.0">CC BY 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=27193496">Link</a>
 						</details>
 					</div>
 				</div>
-				<div class="slide" id="slide-9" style="scroll-snap-align: start; flex: 1 0 100%;height: 40vw; margin: 0 1.5rem 0 1.5rem; background: #fdfef8; border-radius: 0.5rem; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; overflow: auto; gap: 1rem;">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Lipizzaner_DSC02439.jpg" style="object-fit: contain; max-width: 90%; max-height: 80%; border-radius: 0.5em;">
-					<div style="width: 90%;">
+				<div class="slideshowSlide" id="slide-9">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Lipizzaner_DSC02439.jpg">
+					<div class="slideshowText">
 						<hr>
 						<h4>RSA Henry being led by stablehand Mattias Schönburn.</h4>
 						<hr>
 					</div>
-					<div style="width: 100%;">
-						<details style="width: 90%; height: auto; margin: auto; padding: 0.4rem; background: #FFF; border: 2px solid #f6e078; border-radius: 0.5rem; cursor: pointer;">
+					<div class="copyrightContainer">
+						<details>
 							<summary>Image Copyright Information</summary>
-							<div>
-								By <a title="User:David.Monniaux" href="https://commons.wikimedia.org/wiki/User:David.Monniaux" style="font: 1rem 'Georgia';">David.Monniaux</a>, <a href="https://creativecommons.org/licenses/by/2.0" title="Creative Commons Attribution 2.0" style="font: 1rem 'Georgia';">CC BY 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=127656" style="font: 1rem 'Georgia';">Link</a>
-							</div>
+							By <a href="https://commons.wikimedia.org/wiki/User:David.Monniaux">David.Monniaux</a>, <a href="https://creativecommons.org/licenses/by/2.0" title="Creative Commons Attribution 2.0">CC BY 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=127656">Link</a>
 						</details>
 					</div>
 				</div>
-				<div class="slide" id="slide-10" style="scroll-snap-align: start; flex: 1 0 100%; height: 40vw; margin: 0 1.5rem 0 1.5rem; background: #fdfef8; border-radius: 0.5rem; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; overflow: auto; gap: 1rem;">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Alter_Lipizzaner_in_Rente.JPG" style="object-fit: contain; max-width: 90%; max-height: 80%; border-radius: 0.5em;">
-					<div style="width: 90%;">
+				<div class="slideshowSlide" id="slide-10">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Alter_Lipizzaner_in_Rente.JPG">
+					<div class="slideshowText">
 						<hr>
 						<h4>RSA Theresa waits paitently for a treat.</h4>
 						<hr>
 					</div>
-					<div style="width: 100%;">
-						<details style="width: 90%; height: auto; margin: auto; padding: 0.4rem; background: #FFF; border: 2px solid #f6e078; border-radius: 0.5rem; cursor: pointer;">
+					<div class="copyrightContainer">
+						<details>
 							<summary>Image Copyright Information</summary>
-							<div>
-								By <a href="https://en.wikipedia.org/wiki/de:User:Sarras" class="extiw" title="w:de:User:Sarras" style="font: 1rem 'Georgia';">Sarras</a> at <a href="https://en.wikipedia.org/wiki/de:" class="extiw" title="w:de:" style="font: 1rem 'Georgia';">German Wikipedia</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0" style="font: 1rem 'Georgia';">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=19985403" style="font: 1rem 'Georgia';">Link</a>
-							</div>
+							By <a href="https://en.wikipedia.org/wiki/de:User:Sarras">Sarras</a> at <a href="https://en.wikipedia.org/wiki/de:">German Wikipedia</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=19985403">Link</a>
 						</details>
 					</div>
 				</div>
-				<div class="slide" id="slide-11" style="scroll-snap-align: start; flex: 1 0 100%; height: 40vw; margin: 0 1.5rem 0 1.5rem; background: #fdfef8; border-radius: 0.5rem; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; overflow: auto; gap: 1rem;">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Favory_Pallavicina.jpg" style="object-fit: contain; max-width: 90%; max-height: 80%; border-radius: 0.5em;">
-					<div style="width: 90%;">
+				<div class="slideshowSlide" id="slide-11">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Favory_Pallavicina.jpg">
+					<div class="slideshowText">
 						<hr>
 						<h4>RSA Frederick</h4>
 						<hr>
 					</div>
-					<div style="width: 100%;">
-						<details style="width: 90%; height: auto; margin: auto; padding: 0.4rem; background: #FFF; border: 2px solid #f6e078; border-radius: 0.5rem; cursor: pointer;">
+					<div class="copyrightContainer">
+						<details>
 							<summary>Image Copyright Information</summary>
-							<div>
-								By <a href="//commons.wikimedia.org/wiki/User:Conversano_Isabella" title="User:Conversano Isabella" style="font: 1rem 'Georgia';">Conversano Isabella</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0" style="font: 1rem 'Georgia';">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=18175628" style="font: 1rem 'Georgia';">Link</a>
-							</div>
+							By <a href="//commons.wikimedia.org/wiki/User:Conversano_Isabella">Conversano Isabella</a> - Own work, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=18175628">Link</a>
 						</details>
 					</div>
 				</div>
-				<div class="slide" id="slide-12" style="scroll-snap-align: start; flex: 1 0 100%; height: 40vw; margin: 0 1.5rem 0 1.5rem; background: #fdfef8; border-radius: 0.5rem; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; overflow: auto; gap: 1rem;">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Lipizzaner_Stallion.jpg" style="object-fit: contain; max-width: 90%; max-height: 80%; border-radius: 0.5em;">
-					<div style="width: 90%;">
+				<div class="slideshowSlide" id="slide-12">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Lipizzaner_Stallion.jpg">
+					<div class="slideshowText">
 						<hr>
 						<h4>RSA Frederick performs a courbette, a type of air above ground, during his training period at the Royal Amicran Riding School.</h4>
 						<hr>
 					</div>
-					<div style="width: 100%;">
-						<details style="width: 90%; height: auto; margin: auto; padding: 0.4rem; background: #FFF; border: 2px solid #f6e078; border-radius: 0.5rem; cursor: pointer;">
+					<div class="copyrightContainer">
+						<details>
 							<summary>Image Copyright Information</summary>
-							<div>
-								By <a rel="nofollow" class="external text" href="https://www.flickr.com/photos/85123978@N00" style="font: 1rem 'Georgia';">Tom Hammer</a> - originally posted to <a href="//commons.wikimedia.org/wiki/Flickr" class="mw-redirect" title="Flickr" style="font: 1rem 'Georgia';">Flickr</a> as <a rel="nofollow" class="external text" href="https://www.flickr.com/photos/85123978@N00/2614599559" style="font: 1rem 'Georgia';">Lippizaner Stallion</a>, <a href="https://creativecommons.org/licenses/by/2.0" title="Creative Commons Attribution 2.0" style="font: 1rem 'Georgia';">CC BY 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=6373842" style="font: 1rem 'Georgia';">Link</a>
-							</div>
+							By <a href="https://www.flickr.com/photos/85123978@N00">Tom Hammer</a> - originally posted to <a href="//commons.wikimedia.org/wiki/Flickr">Flickr</a> as <a href="https://www.flickr.com/photos/85123978@N00/2614599559">Lippizaner Stallion</a>, <a href="https://creativecommons.org/licenses/by/2.0" title="Creative Commons Attribution 2.0">CC BY 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=6373842">Link</a>
 						</details>
 					</div>
 				</div>
-				<div class="slide" id="slide-13" style="scroll-snap-align: start; flex: 1 0 100%; height: 40vw; margin: 0 1.5rem 0 1.5rem; background: #fdfef8; border-radius: 0.5rem; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; overflow: auto; gap: 1rem;">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Lipizz23.jpg" style="object-fit: contain; max-width: 90%; max-height: 80%; border-radius: 0.5em;">
-					<div style="width: 90%;">
+				<div class="slideshowSlide" id="slide-13">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Lipizz23.jpg">
+					<div class="slideshowText">
 						<hr>
 						<h4>RSA Augustus participates in an exercise at the Royal Carriage Driving School.</h4>
 						<hr>
 					</div>
-					<div style="width: 100%;">
-						<details style="width: 90%; height: auto; margin: auto; padding: 0.4rem; background: #FFF; border: 2px solid #f6e078; border-radius: 0.5rem; cursor: pointer;">
+					<div class="copyrightContainer">
+						<details>
 							<summary>Image Copyright Information</summary>
-							<div>
-								By <a href="//commons.wikimedia.org/w/index.php?title=User:Bingar1234&amp;amp;action=edit&amp;amp;redlink=1" class="new" title="User:Bingar1234 (page does not exist)" style="font: 1rem 'Georgia';">Bingar1234</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0" style="font: 1rem 'Georgia';">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=94429014" style="font: 1rem 'Georgia';">Link</a>
-							</div>
+							By <a href="//commons.wikimedia.org/w/index.php?title=User:Bingar1234&amp;amp;action=edit&amp;amp;redlink=1">Bingar1234</a> - Own work, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=94429014">Link</a>
 						</details>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--Text-->
-		<div style="grid-area: 1 / 2 / 3 / 3; display: flex; flex-direction: column; justify-content: space-between; align-items: center; gap: 1rem;" id="about-me">
+		<!-- Right Side-->
+		<div class="rightMain">
 			<!-- About Me -->
-			<div style="padding: 1rem; background: rgba(253, 254, 248, 0.7); border-radius: 0.5rem; border: 2px solid #1353b4; height: auto;">
-				<img src="https://tarikathehorse.github.io/wos-page/images/horse2.svg" alt="" style="width: 25%; float: left;">
-				<img src="https://tarikathehorse.github.io/wos-page/images/horse2.svg" alt="" style="width: 25%; float: right; transform: rotateY(180deg);">
-				<h2 style="font-size: 1.5rem; margin: 1rem;">About Me</h2>
-				<img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Filet_rhombe.svg" alt="" style="width: 45%;">
-				<p style="text-align: justify; text-indent: 3.125rem; font-size: 1rem;">Hello! I am the Duchess of Canterbury, and I am the manager of the Royal Stables of Amicran. I recently started playing WOS again after a hiatus of <b>6 years!</b> This means I have to start from scratch again, but every end leads to new beginnings, right? I am hoping to specialize in <ins>Lipizzaners and Arabians</ins> and create lines with them. In the meanwhile, I am always tweaking my layout ever so slightly! <mark style="background-color: #f6e078;">My inbox is always open, so feel free to message me about anything!</mark></p>
+			<div class="textBox">
+				<img class="inkDrawing" src="https://tarikathehorse.github.io/wos-page/images/horse2.svg" alt="">
+				<img class="inkDrawing" src="https://tarikathehorse.github.io/wos-page/images/horse2.svg" alt="">
+				<h2>About Me</h2>
+				<img class="filetRhombe" src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Filet_rhombe.svg" alt="">
+				<p>Hello! I am the Duchess of Canterbury, and I am the manager of the Royal Stables of Amicran. I recently started playing WOS again after a hiatus of <b>6 years!</b> This means I have to start from scratch again, but every end leads to new beginnings, right? I am hoping to specialize in <ins>Lipizzaners and Arabians</ins> and create lines with them. In the meanwhile, I am always tweaking my layout ever so slightly! <mark>My inbox is always open, so feel free to message me about anything!</mark></p>
 			</div>
 			<!-- Ornament 1 -->
-			<div style="width: 40%;" >
-				<img src="https://tarikathehorse.github.io/wos-page/images/ornament-BLUE.svg" alt="" width="100%">
-			</div>
+			<img class="ornament" src="https://tarikathehorse.github.io/wos-page/images/ornament-BLUE.svg" alt="">
 			<!-- Stable Shows -->
-			<div style="padding: 1em; background: rgba(253, 254, 248, 0.7); border-radius: 0.5rem; border: 2px solid #1353b4; height: auto;">
-				<img src="https://tarikathehorse.github.io/wos-page/images/horse3.svg" alt="" style="width: 25%; float: left;">
-				<img src="https://tarikathehorse.github.io/wos-page/images/horse3.svg" alt="" style="width: 25%; float: right; transform: rotateY(180deg);">
-				<h2 style="font-size: 1.5rem; margin: 1rem;">Stable Shows</h2>
-				<img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Filet_rhombe.svg" alt="" style="width: 45%;">
-				<p style="text-align: justify; text-indent: 3.125rem; font-size: 1rem;">I do stable shows occasionally and upon request! Currently I am only able to host halter and dressage shows, but as I grow I will expand my facilities! I also want help run shows for my club, <a href="http://whiteoakstables.net/english/viewclub.php?id=7" style="font: 1rem 'Georgia';" target="_blank">Haute Ecole - Iberian<img src="https://cdn.discordapp.com/attachments/886286626978926642/886368415575605268/WOS_HEI_Icon_v2.png" alt="" style="max-height: 1em;"></a>, in the future!</p>
+			<div class="textBox">
+				<img class="inkDrawing" src="https://tarikathehorse.github.io/wos-page/images/horse3.svg" alt="">
+				<img class="inkDrawing" src="https://tarikathehorse.github.io/wos-page/images/horse3.svg" alt="">
+				<h2>Stable Shows</h2>
+				<img class="filetRhombe" src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Filet_rhombe.svg" alt="">
+				<p>I do stable shows occasionally and upon request! Currently I am only able to host halter and dressage shows, but as I grow I will expand my facilities! I also want help run shows for my club, <a href="http://whiteoakstables.net/english/viewclub.php?id=7" target="_blank">Haute Ecole - Iberian<img src="https://cdn.discordapp.com/attachments/886286626978926642/886368415575605268/WOS_HEI_Icon_v2.png" alt=""></a>, in the future!</p>
 				<a href="http://whiteoakstables.net/english/visit_stables.php?sid=398222" style="text-decoration: none; margin: auto; display: inline-block; font: 1rem Georgia;" title="Royal Stables of Amicran" target="_blank">
-					<button type="button" id="my-stable" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); border: 0.25rem solid #f3d53f; border-radius: 0.5rem; font: 1.25rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer;">Royal Stables of Amicran</button>
+					<button type="button">Royal Stables of Amicran</button>
 				</a>
 			</div>
 			<!-- Ornament 2 -->
-			<div style="width: 40%;" >
-				<img src="https://tarikathehorse.github.io/wos-page/images/ornament-BLUE.svg" alt="" width="100%">
-			</div>
+			<img class="ornament" src="https://tarikathehorse.github.io/wos-page/images/ornament-BLUE.svg" alt="">
 			<!-- Tab boxes -->
-			<div style="padding: 1rem; background: rgba(253, 254, 248, 0.7); border-radius: 0.5rem; border: 2px solid #1353b4;" id="fillers-gs">
+			<div class="textBox">
 				<form style="display: grid; grid-template-columns: repeat(2, 1fr); place-items: center; width: 100%; height: 100%; font-family: 'Georgia';">
 					<input type="radio" name="TIS" id="TabInputS" checked style="appearance: none; width: 100%; grid-area: 1 / 1 / 2 / 2; background-color: #faf1b8; border: 0.25rem solid #f3d53f; border-radius: 0.5rem 0.5rem 0 0; height: 3rem; filter: drop-shadow(0.25rem -0.25rem 0.1rem rgba(0,0,0,0.5)); transition-duration: 100ms; box-sizing: border-box;">
 						<label id="TabLabelS" style="grid-area: 1 / 1 / 2 / 2; font-size: 1.25rem; z-index: 0; color: black;">Fillers</label>
@@ -293,7 +262,7 @@
 							<img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Filet_rhombe.svg" alt="" style="width: 45%;">
 							<p style="text-align: justify; text-indent: 3.125rem; font-size: 1rem;" contenteditable="false" spellcheck="true">I have a second account where I take in/buy unwanted horses and use them as fillers. As long as they are healthy, I do not care what breed/circuit they are! You can find my filler account at the button below!</p>
 							<a href="http://whiteoakstables.net/english/visit_home.php?mid=432322" style="text-decoration: none; font: 1rem Georgia;" target="_blank">
-								<button type="button" id="filler-account" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); border: 0.25rem solid #f3d53f; border-radius: 0.5rem; font: 1.25rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer;">DoC's~Fillers</button>
+								<button type="button">DoC's~Fillers</button>
 							</a>
 						</div>
 						<div id="TabContentS" style="display: none; padding: 1rem;">
@@ -891,67 +860,9 @@
 			</tbody>
 		</table>
 	</details>
-	<hr style="height: 1px; background: #aaa; margin: 20px 0;">
-	<!-- Quick Menu -->
-	<footer style="position: sticky; bottom: 0.25rem; width: 70vw; background-color: #fdfef8; margin: auto; overflow: auto; background: #fdfef8; border-radius: 0.5rem; border: 0.25rem solid #1353b4;">
-		<div style="font-size: 1.25rem; margin: 0px; padding: 0.3rem;">
-			<img style="translate: rotateY(180deg); vertical-align: middle;" width="4%" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Bodoni_Ornaments_%C2%A3_01.svg" alt="">
-			<em style="vertical-align: middle;">Quick Menu</em>
-			<img style="translate: rotateY(180deg); vertical-align: middle;" width="4%" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Bodoni_Ornaments_%C2%A3_02.svg" alt="">
-		</div>
-		<div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
-			<img style="width: 30%;" src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Filet_rhombe.svg" alt="">
-		</div>
-		<div style="display: flex; flex-direction: row; justify-content: center; align-items: center; width: 100%; margin: auto; flex-wrap: wrap;">
-			<a href="http://whiteoakstables.net/english/treats.php" style="text-decoration: none; margin: 0.25rem 0.5rem; font: 1rem Georgia;" target="_blank">
-				<button type="button" id="treats" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); font: 1rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25rem solid #f3d53f; border-radius: 0.5rem;">Treat Store</button>
-			</a>
-			<a href="http://whiteoakstables.net/english/clubs.php" style="text-decoration: none; margin: 0.25rem 0.5rem; font: 1rem Georgia;" target="_blank">
-				<button type="button" id="clubs" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); font: 1rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25rem solid #f3d53f; border-radius: 0.5rem;">Clubs</button>
-			</a>
-			<a href="http://whiteoakstables.net/english/stableshow.php" style="text-decoration: none; margin: 0.25rem 0.5rem; font: 1rem Georgia;" target="_blank">
-				<button type="button" id="stable-shows" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); font: 1rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25rem solid #f3d53f; border-radius: 0.5rem;">Stable Shows</button>
-			</a>
-			<a href="http://whiteoakstables.net/english/horse_records.php?hid=564176" style="text-decoration: none; margin: 0.25rem 0.5rem; font: 1rem Georgia;" target="_blank">
-				<button type="button" id="records" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); font: 1rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25rem solid #f3d53f; border-radius: 0.5rem;">Horse Records</button>
-			</a>
-			<a href="http://whiteoakstables.net/english/caretaker.php" style="text-decoration: none; margin: 0.25rem 0.5rem; font: 1rem Georgia;" target="_blank">
-				<button type="button" id="caretaker" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); font: 1rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25rem solid #f3d53f; border-radius: 0.5rem;">Caretaker</button>
-			</a>
-			<a href="http://whiteoakstables.net/english/visit_home.php?mid=432322" style="text-decoration: none; margin: 0.25rem 0.5rem; font: 1rem Georgia;" target="_blank">
-				<button type="button" id="fillers" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); font: 1rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25rem solid #f3d53f; border-radius: 0.5rem;">Fillers</button>
-			</a>
-		</div>
-	</footer>
-	<!-- Under construction banner -->
-	<div style="position: fixed; top: 0; left: 0; z-index: 100; width: 15vw;">
-		<img title="My member page is under construction! Check back later for final product!" src="http://www.harrisongrp.co.uk/gallery_gen/f6402afe606f3cceeed3fda27b5fd8a5.png" alt="Website under construction banner" width="100%"/>
-	</div>
-	<!-- Bottom Banner -->
-	<div>
-		<img width="45%" style="transform: rotateZ(180deg);" src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Harpel%E2%80%99s_flourish_5.svg" alt="">
-	</div>
-</div>
+	<hr style="height: 1px; background: #aaa; margin: 20px 0 0 0;">
 <!-- JQuery -->
 <script>
-	// Button hover effect
-	$("button")
-		.bind( "mouseenter", function() {
-			$(this).css({
-				backgroundColor: "#1353b4", 
-				color: "#fff", 
-				border: "0.25rem double #f3d53f", 
-				transitionDuration: "200ms",
-			});
-		})
-		.bind( "mouseleave", function() {
-			$(this).css({
-				backgroundColor: "#fdfef8", 
-				color: "#000", 
-				border: "0.25rem solid #f3d53f", 
-				transitionDuration: "200ms",
-			});
-		})
 	// Small tabs hover effect
 	$("[name=TIS]")
 		.bind( "mouseenter", function() {

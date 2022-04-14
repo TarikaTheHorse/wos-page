@@ -4,20 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
 </head>
 <body>
-    <div style="width: 75vw; overflow: hidden;">
-        <iframe src="https://tarikathehorse.github.io/wos-page/398222/my-page.html" id="child-iframe" frameborder="0" width="100%" height="100%" style="overflow: hidden;"></iframe>
+    <div style="width: 75vw; overflow: hidden; text-align: center; margin: auto;">
+        <!-- Under construction banner -->
+        <div style="position: fixed; top: 0; left: 0; z-index: 100; width: 15vw;">
+            <img title="My member page is under construction! Check back later for final product!" src="http://www.harrisongrp.co.uk/gallery_gen/f6402afe606f3cceeed3fda27b5fd8a5.png" alt="Website under construction banner" width="100%"/>
+        </div>
+        <iframe src="my-page.html" id="child-iframe" frameborder="0" width="100%" height="100%" style="overflow: hidden;"></iframe>
+        <!-- Quick Menu -->
+        <footer style="position: sticky; bottom: 0.25rem; width: 70vw; background-color: #fdfef8; margin: auto; overflow: auto; background: #fdfef8; border-radius: 0.5rem; border: 0.25rem solid #1353b4;">
+            <div style="font-size: 1.25rem; margin: 0px; padding: 0.3rem;">
+                <img style="translate: rotateY(180deg); vertical-align: middle;" width="4%" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Bodoni_Ornaments_%C2%A3_01.svg" alt="">
+                <em style="vertical-align: middle; font-family: Georgia;">Quick Menu</em>
+                <img style="translate: rotateY(180deg); vertical-align: middle;" width="4%" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Bodoni_Ornaments_%C2%A3_02.svg" alt="">
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                <img style="width: 30%;" src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Filet_rhombe.svg" alt="">
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; width: 100%; margin: auto; flex-wrap: wrap;">
+                <a href="http://whiteoakstables.net/english/treats.php" style="text-decoration: none; margin: 0.25rem 0.5rem; font: 1rem Georgia;" target="_blank">
+                    <button type="button" id="treats" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); font: 1rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25rem solid #f3d53f; border-radius: 0.5rem;">Treat Store</button>
+                </a>
+                <a href="http://whiteoakstables.net/english/clubs.php" style="text-decoration: none; margin: 0.25rem 0.5rem; font: 1rem Georgia;" target="_blank">
+                    <button type="button" id="clubs" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); font: 1rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25rem solid #f3d53f; border-radius: 0.5rem;">Clubs</button>
+                </a>
+                <a href="http://whiteoakstables.net/english/stableshow.php" style="text-decoration: none; margin: 0.25rem 0.5rem; font: 1rem Georgia;" target="_blank">
+                    <button type="button" id="stable-shows" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); font: 1rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25rem solid #f3d53f; border-radius: 0.5rem;">Stable Shows</button>
+                </a>
+                <a href="http://whiteoakstables.net/english/horse_records.php?hid=564176" style="text-decoration: none; margin: 0.25rem 0.5rem; font: 1rem Georgia;" target="_blank">
+                    <button type="button" id="records" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); font: 1rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25rem solid #f3d53f; border-radius: 0.5rem;">Horse Records</button>
+                </a>
+                <a href="http://whiteoakstables.net/english/caretaker.php" style="text-decoration: none; margin: 0.25rem 0.5rem; font: 1rem Georgia;" target="_blank">
+                    <button type="button" id="caretaker" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); font: 1rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25rem solid #f3d53f; border-radius: 0.5rem;">Caretaker</button>
+                </a>
+                <a href="http://whiteoakstables.net/english/visit_home.php?mid=432322" style="text-decoration: none; margin: 0.25rem 0.5rem; font: 1rem Georgia;" target="_blank">
+                    <button type="button" id="fillers" style="filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0,0,0,0.5)); font: 1rem Georgia; padding: 0.4rem; background-color: #fdfef8; color: #000; cursor: pointer; border: 0.25rem solid #f3d53f; border-radius: 0.5rem;">Fillers</button>
+                </a>
+            </div>
+        </footer>
+        <!-- Bottom Banner -->
+        <div>
+            <img width="45%" style="transform: rotateZ(180deg);" src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Harpel%E2%80%99s_flourish_5.svg" alt="">
+        </div>
     </div>
     <script>
-    let iframe = document.querySelector("#child-iframe");
-
-    window.addEventListener('message', function(e) {
-        // message that was passed from iframe page
-        let message = e.data;
-
-        iframe.style.height = message.height + 'px';
-    } , false);
-    </script>
+        let iframe = document.querySelector("#child-iframe");
+    
+        window.addEventListener('message', function(e) {
+            // message that was passed from iframe page
+            let message = e.data;
+    
+            iframe.style.height = message.height + 'px';
+        } , false);
+    
+        // Button hover effect
+        $("button")
+            .bind( "mouseenter", function() {
+                $(this).css({
+                    backgroundColor: "#1353b4", 
+                    color: "#fff", 
+                    border: "0.25rem double #f3d53f", 
+                    transitionDuration: "200ms",
+                });
+            })
+            .bind( "mouseleave", function() {
+                $(this).css({
+                    backgroundColor: "#fdfef8", 
+                    color: "#000", 
+                    border: "0.25rem solid #f3d53f", 
+                    transitionDuration: "200ms",
+                });
+            })
+        </script>
 </body>
 </html>
