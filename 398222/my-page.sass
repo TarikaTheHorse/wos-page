@@ -69,6 +69,8 @@ img
             transform: rotateY(180deg)
     &.filetRhombe
         width: 45%
+    &.HEIlogo
+        max-height: 1rem
 .mainGrid
     display: grid
     grid-template: auto / 50% 50%
@@ -135,15 +137,65 @@ img
     justify-content: space-between
     align-items: center
     gap: 1rem
+.leftMain
+    grid-area: 1 / 1 / 3 / 2
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    gap: 1rem
 .textBox
     padding: 1rem
     background: rgba(253, 254, 248, 0.7)
     border-radius: 0.5rem
     border: 2px solid $darkblue
-    height: auto
+    width: 100%
+    height: 100%
+    box-sizing: border-box
     h2
         font-size: 1.5rem
     p
         text-align: justify
         text-indent: 3.125rem
         font-size: 1rem
+
+.leftMain form
+    grid-template-columns: repeat(3, 1fr)
+.rightMain form
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-areas: "tab tab
+    div
+    tab tab"
+    label
+        &:nth-child(odd)
+            grid-column: 1 / 2
+        &:nth-child(even)
+            grid-column: 2 / 3
+    div
+        grid-column: 1 / 3
+        grid-row: 2 / 3
+form
+    display: grid
+    place-items: center
+    width: 100%
+    height: 100%
+    input
+        appearance: none
+    label
+        font-size: 1.25rem
+        z-index: 1
+        color: black
+        width: 100%
+        height: 3rem
+        grid-area: 1 / 1 / 2 / 2
+        background-color: #faf1b8
+        border: 0.25rem solid #f3d53f
+        border-radius: 0.5rem 0.5rem 0 0
+        filter: drop-shadow(0.25rem -0.25rem 0.1rem rgba(0,0,0,0.5))
+        transition-duration: 100ms
+        box-sizing: border-box
+        vertical-align: middle
+        &:hover
+            color: white
+            background-color: $darkblue
+            border-style: double
