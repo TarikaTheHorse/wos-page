@@ -285,36 +285,114 @@ img.HEIlogo {
   font-size: 1rem;
 }
 
+.textBox .inside {
+  border: 0.25rem solid #f3d53f;
+  border-width: 0 0.25rem;
+  padding: 0;
+}
+
 .leftMain form {
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "tab1 tab2 tab3" "div div div";
+}
+
+.leftMain form label#TIB1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: tab1;
+}
+
+.leftMain form label#TIB2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: tab2;
+}
+
+.leftMain form label#TIB3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: tab3;
+}
+
+.leftMain form div {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: div;
+}
+
+.leftMain form div .tabContent {
+  display: none;
+  padding: 1rem;
+}
+
+.leftMain form div .tabContent ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .rightMain form {
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "tab tab;\a     div {}\a     tab tab";
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr auto 1fr;
+      grid-template-rows: 1fr auto 1fr;
+      grid-template-areas: "tab1 tab2" "div div" "tab3 tab4";
 }
 
-.rightMain form label:nth-child(odd) {
+.rightMain form .textBox label #TIS1 {
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
+  grid-area: tab1;
 }
 
-.rightMain form label:nth-child(even) {
+.rightMain form .textBox label #TIS2 {
+  -ms-grid-row: 1;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
+  grid-area: tab2;
+}
+
+.rightMain form .textBox label #TIS3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: tab3;
+}
+
+.rightMain form .textBox label #TIS4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: tab4;
 }
 
 .rightMain form div {
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-column: 1 / 3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
+  grid-area: div;
+}
+
+.rightMain form div .tabContent {
+  padding: 1rem;
+}
+
+.rightMain form div .tabContent ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.rightMain form div .tabContent .scheduleTable {
+  width: 100%;
+}
+
+.rightMain form div .tabContent .scheduleTable td {
+  font-size: 0.75rem;
+  border: 1px solid #f3d53f;
 }
 
 form {
